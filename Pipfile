@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+colorama = ">=0.4.4"
+scipy = ">=1.6.2"
+numpy = ">=1.20.2"
+matplotlib = ">=3.3.4"
+pandas = ">=1.2.4"
+pyvalem = ">=2.1.0"
+PyYAML = ">=5.4.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

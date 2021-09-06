@@ -1,0 +1,1372 @@
+<chemistry>
+    <meta>
+        <comments>
+            This is the C04 QDB chemistry, using the pooled species.
+        </comments>
+    </meta>
+    <species>
+        <rp id="0">
+            <name>e</name>
+            <mass unit="amu">5.46E-04</mass>
+            <charge unit="e">-1</charge>
+            <hpem_name>E</hpem_name>
+            <qdb_id>1</qdb_id>
+        </rp>
+        <rp id="1">
+            <name>H</name>
+            <mass unit="amu">1.00794</mass>
+            <lj_epsilon unit="K">37.0</lj_epsilon>
+            <lj_sigma unit="A">2.71</lj_sigma>
+            <hpem_name>H</hpem_name>
+            <qdb_id>32</qdb_id>
+            <stick_coef>0.3</stick_coef>
+            <ret_coefs>
+                <r rp="H2">0.5</r>
+            </ret_coefs>
+        </rp>
+        <rp id="2">
+            <name>H+</name>
+            <mass unit="amu">1.00794</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">37.0</lj_epsilon>
+            <lj_sigma unit="A">2.71</lj_sigma>
+            <hpem_name>H^</hpem_name>
+            <qdb_id>26</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="H2">0.15</r>
+                <r rp="H">0.7</r>
+            </ret_coefs>
+        </rp>
+        <rp id="3">
+            <name>H*</name>
+            <stateless>H</stateless>
+            <state>n=2</state>
+            <mass unit="amu">1.00794</mass>
+            <lj_epsilon unit="K">37.0</lj_epsilon>
+            <lj_sigma unit="A">2.71</lj_sigma>
+            <hpem_name>H*</hpem_name>
+            <qdb_id>909</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="H2">0.15</r>
+                <r rp="H">0.7</r>
+            </ret_coefs>
+        </rp>
+        <rp id="4">
+            <name>H2</name>
+            <mass unit="amu">2.01588</mass>
+            <lj_epsilon unit="K">35.6</lj_epsilon>
+            <lj_sigma unit="A">2.94</lj_sigma>
+            <hpem_name>H2</hpem_name>
+            <qdb_id>12</qdb_id>
+        </rp>
+        <rp id="5">
+            <name>H2+</name>
+            <mass unit="amu">2.01588</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">35.6</lj_epsilon>
+            <lj_sigma unit="A">2.94</lj_sigma>
+            <hpem_name>H2^</hpem_name>
+            <qdb_id>29</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="H2">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="6">
+            <name>H3+</name>
+            <mass unit="amu">3.02382</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">35.6</lj_epsilon>
+            <lj_sigma unit="A">2.94</lj_sigma>
+            <hpem_name>H3^</hpem_name>
+            <qdb_id>101</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="H2">1.0</r>
+                <r rp="H">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="7">
+            <name>O</name>
+            <mass unit="amu">15.9994</mass>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O</hpem_name>
+            <qdb_id>15</qdb_id>
+            <stick_coef>0.2</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.5</r>
+            </ret_coefs>
+        </rp>
+        <rp id="8">
+            <name>O+</name>
+            <mass unit="amu">15.9994</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O^</hpem_name>
+            <qdb_id>9</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.1</r>
+                <r rp="O">0.8</r>
+            </ret_coefs>
+        </rp>
+        <rp id="9">
+            <name>O-</name>
+            <mass unit="amu">15.9994</mass>
+            <charge unit="e">-1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O-</hpem_name>
+            <qdb_id>16</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.1</r>
+                <r rp="O">0.8</r>
+            </ret_coefs>
+        </rp>
+        <rp id="10">
+            <name>O*</name>
+            <stateless>O</stateless>
+            <state>*</state>
+            <mass unit="amu">15.9994</mass>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O*</hpem_name>
+            <qdb_id>141</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.1</r>
+                <r rp="O">0.8</r>
+            </ret_coefs>
+        </rp>
+        <rp id="11">
+            <name>O2</name>
+            <mass unit="amu">31.9988</mass>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.47</lj_sigma>
+            <hpem_name>O2</hpem_name>
+            <qdb_id>14</qdb_id>
+        </rp>
+        <rp id="12">
+            <name>O2+</name>
+            <mass unit="amu">31.9988</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.47</lj_sigma>
+            <hpem_name>O2^</hpem_name>
+            <qdb_id>54</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="13">
+            <name>O2-</name>
+            <mass unit="amu">31.9988</mass>
+            <charge unit="e">-1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.47</lj_sigma>
+            <hpem_name>O2-</hpem_name>
+            <qdb_id>55</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="14">
+            <name>O2*</name>
+            <stateless>O2</stateless>
+            <state>*</state>
+            <mass unit="amu">31.9988</mass>
+            <lj_epsilon unit="K">113.0</lj_epsilon>
+            <lj_sigma unit="A">2.44</lj_sigma>
+            <hpem_name>O2*</hpem_name>
+            <qdb_id>139</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="15">
+            <name>O2(v)</name>
+            <stateless>O2</stateless>
+            <state>v=*</state>
+            <mass unit="amu">31.9988</mass>
+            <lj_epsilon unit="K">113.0</lj_epsilon>
+            <lj_sigma unit="A">2.44</lj_sigma>
+            <hpem_name>O2V</hpem_name>
+            <qdb_id>1134</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="16">
+            <name>O3</name>
+            <mass unit="amu">47.9982</mass>
+            <lj_epsilon unit="K">400.0</lj_epsilon>
+            <lj_sigma unit="A">4.0</lj_sigma>
+            <hpem_name>O3</hpem_name>
+            <qdb_id>175</qdb_id>
+            <stick_coef>0.15</stick_coef>
+            <ret_coefs>
+                <r rp="O2">1.0</r>
+                <r rp="O">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="17">
+            <name>O3-</name>
+            <mass unit="amu">47.9982</mass>
+            <charge unit="e">-1</charge>
+            <lj_epsilon unit="K">400.0</lj_epsilon>
+            <lj_sigma unit="A">4.0</lj_sigma>
+            <hpem_name>O3-</hpem_name>
+            <qdb_id>218</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.075</r>
+                <r rp="O">0.075</r>
+                <r rp="O3">0.85</r>
+            </ret_coefs>
+        </rp>
+        <rp id="18">
+            <name>OH</name>
+            <mass unit="amu">17.00734</mass>
+            <lj_epsilon unit="K">79.8</lj_epsilon>
+            <lj_sigma unit="A">3.147</lj_sigma>
+            <hpem_name>OH</hpem_name>
+            <qdb_id>142</qdb_id>
+        </rp>
+        <rp id="19">
+            <name>H2O</name>
+            <mass unit="amu">18.01528</mass>
+            <lj_epsilon unit="K">809.1</lj_epsilon>
+            <lj_sigma unit="A">2.64</lj_sigma>
+            <hpem_name>H2O</hpem_name>
+            <qdb_id>71</qdb_id>
+        </rp>
+        <rp id="20">
+            <name>H2O+</name>
+            <mass unit="amu">18.01528</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">809.1</lj_epsilon>
+            <lj_sigma unit="A">2.64</lj_sigma>
+            <hpem_name>H2O^</hpem_name>
+            <qdb_id>72</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="H2O">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="21">
+            <name>HO2</name>
+            <mass unit="amu">33.00674</mass>
+            <lj_epsilon unit="K">289.3</lj_epsilon>
+            <lj_sigma unit="A">4.196</lj_sigma>
+            <hpem_name>HO2</hpem_name>
+            <qdb_id>275</qdb_id>
+        </rp>
+        <rp id="22">
+            <name>H2O2</name>
+            <mass unit="amu">34.01468</mass>
+            <lj_epsilon unit="K">289.3</lj_epsilon>
+            <lj_sigma unit="A">4.196</lj_sigma>
+            <hpem_name>H2O2</hpem_name>
+            <qdb_id>288</qdb_id>
+        </rp>
+        <rp id="999">
+            <name>M</name>
+            <hpem_name>M</hpem_name>
+            <qdb_id>293</qdb_id>
+        </rp>
+    </species>
+    <reactions>
+        <reaction id="1">
+            <reactants>e, H2</reactants>
+            <products>H2, e</products>
+            <arrh_a unit="cm3.s-1">1.76e-07</arrh_a>
+            <arrh_b>-3.51e-01</arrh_b>
+            <arrh_c unit="eV">6.47e-01</arrh_c>
+            <special_number>-10</special_number>
+            <qdb_r_id>383</qdb_r_id>
+            <qdb_ds_id>375</qdb_ds_id>
+            <doi>10.1051/jphyscol:1979722</doi>
+        </reaction>
+        <reaction id="2">
+            <reactants>e, H</reactants>
+            <products>H, e</products>
+            <arrh_a unit="cm3.s-1">1.81e-07</arrh_a>
+            <arrh_b>-2.35e-01</arrh_b>
+            <arrh_c unit="eV">1.87e-01</arrh_c>
+            <special_number>-25</special_number>
+            <qdb_r_id>395</qdb_r_id>
+            <qdb_ds_id>387</qdb_ds_id>
+            <doi>10.1016/0032-0633(66)90024-9</doi>
+        </reaction>
+        <reaction id="3">
+            <reactants>e, H2+</reactants>
+            <products>H2+, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.82e-02</arrh_c>
+            <special_number>-21</special_number>
+            <qdb_r_id>392</qdb_r_id>
+            <qdb_ds_id>384</qdb_ds_id>
+            <doi>10.1063/1.109440</doi>
+        </reaction>
+        <reaction id="4">
+            <reactants>e, H*</reactants>
+            <products>e, H*</products>
+            <arrh_a unit="cm3.s-1">1.81e-07</arrh_a>
+            <arrh_b>-2.35e-01</arrh_b>
+            <arrh_c unit="eV">1.87e-01</arrh_c>
+            <qdb_r_id>1857</qdb_r_id>
+            <qdb_ds_id>1826</qdb_ds_id>
+            <doi>10.1016/0032-0633(66)90024-9</doi>
+        </reaction>
+        <reaction id="5">
+            <reactants>e, H+</reactants>
+            <products>H+, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.83e-02</arrh_c>
+            <special_number>-30</special_number>
+            <qdb_r_id>400</qdb_r_id>
+            <qdb_ds_id>392</qdb_ds_id>
+            <doi>10.1051/jphyscol:1979722</doi>
+        </reaction>
+        <reaction id="6">
+            <reactants>e, H2O</reactants>
+            <products>H2O, e</products>
+            <arrh_a unit="cm3.s-1">4.86e-08</arrh_a>
+            <arrh_b>4.36e-01</arrh_b>
+            <arrh_c unit="eV">-2.29e-01</arrh_c>
+            <qdb_r_id>5267</qdb_r_id>
+            <qdb_ds_id>5316</qdb_ds_id>
+            <doi>10.1063/1.1799251</doi>
+        </reaction>
+        <reaction id="7">
+            <reactants>e, H3+</reactants>
+            <products>H3+, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.82e-02</arrh_c>
+            <special_number>-2240</special_number>
+            <qdb_r_id>428</qdb_r_id>
+            <qdb_ds_id>420</qdb_ds_id>
+            <doi>10.1063/1.109440</doi>
+        </reaction>
+        <reaction id="8">
+            <reactants>e, O2</reactants>
+            <products>O2, e</products>
+            <arrh_a unit="cm3.s-1">3.93e-08</arrh_a>
+            <arrh_b>6.28e-01</arrh_b>
+            <arrh_c unit="eV">-1.98e-02</arrh_c>
+            <special_number>-400</special_number>
+            <qdb_r_id>588</qdb_r_id>
+            <qdb_ds_id>580</qdb_ds_id>
+        </reaction>
+        <reaction id="9">
+            <reactants>e, O-</reactants>
+            <products>O-, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.82e-02</arrh_c>
+            <special_number>-2260</special_number>
+            <qdb_r_id>601</qdb_r_id>
+            <qdb_ds_id>593</qdb_ds_id>
+            <doi>10.1063/1.109440</doi>
+        </reaction>
+        <reaction id="10">
+            <reactants>e, O</reactants>
+            <products>O, e</products>
+            <arrh_a unit="cm3.s-1">6.47e-08</arrh_a>
+            <arrh_b>3.30e-01</arrh_b>
+            <arrh_c unit="eV">4.69e-01</arrh_c>
+            <special_number>-934</special_number>
+            <qdb_r_id>602</qdb_r_id>
+            <qdb_ds_id>594</qdb_ds_id>
+            <doi>10.1063/1.555857</doi>
+        </reaction>
+        <reaction id="11">
+            <reactants>e, O2+</reactants>
+            <products>O2+, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.82e-02</arrh_c>
+            <special_number>-2258</special_number>
+            <qdb_r_id>599</qdb_r_id>
+            <qdb_ds_id>591</qdb_ds_id>
+            <doi>10.1016/0370-1573(90)90159-y</doi>
+        </reaction>
+        <reaction id="12">
+            <reactants>e, O*</reactants>
+            <products>O*, e</products>
+            <arrh_a unit="cm3.s-1">6.47e-08</arrh_a>
+            <arrh_b>3.30e-01</arrh_b>
+            <arrh_c unit="eV">4.69e-01</arrh_c>
+            <special_number>-942</special_number>
+            <qdb_r_id>628</qdb_r_id>
+            <qdb_ds_id>620</qdb_ds_id>
+        </reaction>
+        <reaction id="13">
+            <reactants>e, O3-</reactants>
+            <products>O3-, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.82e-02</arrh_c>
+            <special_number>-1980</special_number>
+            <qdb_r_id>634</qdb_r_id>
+            <qdb_ds_id>626</qdb_ds_id>
+            <doi>10.1063/1.109440</doi>
+        </reaction>
+        <reaction id="14">
+            <reactants>e, H</reactants>
+            <products>e, H*</products>
+            <arrh_a unit="cm3.s-1">1.81e-08</arrh_a>
+            <arrh_b>2.48e-01</arrh_b>
+            <arrh_c unit="eV">1.11e+01</arrh_c>
+            <el_en_loss unit="eV">10.05</el_en_loss>
+            <special_number>-26</special_number>
+            <qdb_r_id>396</qdb_r_id>
+            <qdb_ds_id>388</qdb_ds_id>
+            <doi>10.1051/jphyscol:1979722</doi>
+        </reaction>
+        <reaction id="15">
+            <reactants>e, O2</reactants>
+            <products>O2*, e</products>
+            <arrh_a unit="cm3.s-1">2.76e-09</arrh_a>
+            <arrh_b>-3.39e-01</arrh_b>
+            <arrh_c unit="eV">3.27e+00</arrh_c>
+            <el_en_loss unit="eV">0.975</el_en_loss>
+            <special_number>-407</special_number>
+            <qdb_r_id>594</qdb_r_id>
+            <qdb_ds_id>582</qdb_ds_id>
+        </reaction>
+        <reaction id="16">
+            <reactants>e, O2</reactants>
+            <products>e, O2(v)</products>
+            <arrh_a unit="cm3.s-1">4.88e-10</arrh_a>
+            <arrh_b>-1.42e+00</arrh_b>
+            <arrh_c unit="eV">5.60e-01</arrh_c>
+            <el_en_loss unit="eV">0.175</el_en_loss>
+            <qdb_r_id>18034</qdb_r_id>
+            <qdb_ds_id>2969</qdb_ds_id>
+        </reaction>
+        <reaction id="17">
+            <reactants>e, O2</reactants>
+            <products>e, O2(v)</products>
+            <arrh_a unit="cm3.s-1">1.85e-10</arrh_a>
+            <arrh_b>-1.45e+00</arrh_b>
+            <arrh_c unit="eV">8.16e-01</arrh_c>
+            <el_en_loss unit="eV">0.55</el_en_loss>
+            <qdb_r_id>18034</qdb_r_id>
+            <qdb_ds_id>2970</qdb_ds_id>
+        </reaction>
+        <reaction id="18">
+            <reactants>e, O2</reactants>
+            <products>e, O2(v)</products>
+            <arrh_a unit="cm3.s-1">9.48e-09</arrh_a>
+            <arrh_b>-1.13e+00</arrh_b>
+            <arrh_c unit="eV">7.55e+00</arrh_c>
+            <el_en_loss unit="eV">0.675</el_en_loss>
+            <qdb_r_id>18034</qdb_r_id>
+            <qdb_ds_id>2971</qdb_ds_id>
+        </reaction>
+        <reaction id="19">
+            <reactants>e, O2</reactants>
+            <products>e, O2(v)</products>
+            <arrh_a unit="cm3.s-1">6.93e-09</arrh_a>
+            <arrh_b>-1.24e+00</arrh_b>
+            <arrh_c unit="eV">7.99e+00</arrh_c>
+            <el_en_loss unit="eV">0.775</el_en_loss>
+            <qdb_r_id>18034</qdb_r_id>
+            <qdb_ds_id>2972</qdb_ds_id>
+        </reaction>
+        <reaction id="20">
+            <reactants>e, O2</reactants>
+            <products>e, O2(v)</products>
+            <arrh_a unit="cm3.s-1">3.47e-08</arrh_a>
+            <arrh_b>-1.10e+00</arrh_b>
+            <arrh_c unit="eV">7.34e+00</arrh_c>
+            <el_en_loss unit="eV">4.0</el_en_loss>
+            <qdb_r_id>18034</qdb_r_id>
+            <qdb_ds_id>2973</qdb_ds_id>
+        </reaction>
+        <reaction id="21">
+            <reactants>e, O2</reactants>
+            <products>e, O2(v)</products>
+            <arrh_a unit="cm3.s-1">1.52e-08</arrh_a>
+            <arrh_b>-1.09e+00</arrh_b>
+            <arrh_c unit="eV">7.30e+00</arrh_c>
+            <el_en_loss unit="eV">4.0</el_en_loss>
+            <qdb_r_id>18034</qdb_r_id>
+            <qdb_ds_id>2974</qdb_ds_id>
+        </reaction>
+        <reaction id="22">
+            <reactants>e, O</reactants>
+            <products>e, O*</products>
+            <arrh_a unit="cm3.s-1">1.06e-08</arrh_a>
+            <arrh_b>-3.97e-01</arrh_b>
+            <arrh_c unit="eV">3.44e+00</arrh_c>
+            <el_en_loss unit="eV">1.95</el_en_loss>
+            <qdb_r_id>18010</qdb_r_id>
+            <qdb_ds_id>3684</qdb_ds_id>
+            <doi>10.1063/1.555872</doi>
+        </reaction>
+        <reaction id="23">
+            <reactants>e, O</reactants>
+            <products>e, O*</products>
+            <arrh_a unit="cm3.s-1">1.16e-09</arrh_a>
+            <arrh_b>-1.75e-01</arrh_b>
+            <arrh_c unit="eV">5.08e+00</arrh_c>
+            <el_en_loss unit="eV">4.175</el_en_loss>
+            <qdb_r_id>18010</qdb_r_id>
+            <qdb_ds_id>3685</qdb_ds_id>
+            <doi>10.1063/1.555872</doi>
+        </reaction>
+        <reaction id="24">
+            <reactants>e, H2</reactants>
+            <products>H, e, H*</products>
+            <arrh_a unit="cm3.s-1">2.17e-10</arrh_a>
+            <arrh_b>2.15e-01</arrh_b>
+            <arrh_c unit="eV">1.51e+01</arrh_c>
+            <el_en_loss unit="eV">16.575</el_en_loss>
+            <special_number>-19</special_number>
+            <qdb_r_id>390</qdb_r_id>
+            <qdb_ds_id>382</qdb_ds_id>
+            <doi>10.1063/1.1671103</doi>
+        </reaction>
+        <reaction id="25">
+            <reactants>e, O2(v)</reactants>
+            <products>O*, e, O</products>
+            <arrh_a unit="cm3.s-1">2.47e-08</arrh_a>
+            <arrh_b>2.08e-01</arrh_b>
+            <arrh_c unit="eV">7.34e+00</arrh_c>
+            <el_en_loss unit="eV">8.2</el_en_loss>
+            <special_number>-2101</special_number>
+            <qdb_r_id>638</qdb_r_id>
+            <qdb_ds_id>634</qdb_ds_id>
+        </reaction>
+        <reaction id="26">
+            <reactants>e, H*</reactants>
+            <products>H, e</products>
+            <arrh_a unit="cm3.s-1">1.11e-08</arrh_a>
+            <arrh_b>4.31e-01</arrh_b>
+            <arrh_c unit="eV">1.35e-01</arrh_c>
+            <el_en_loss unit="eV">-10.05</el_en_loss>
+            <qdb_r_id>1858</qdb_r_id>
+            <qdb_ds_id>1827</qdb_ds_id>
+            <doi>10.1051/jphyscol:1979722</doi>
+        </reaction>
+        <reaction id="27">
+            <reactants>e, O*</reactants>
+            <products>O, e</products>
+            <arrh_a unit="cm3.s-1">5.82e-09</arrh_a>
+            <arrh_b>-1.97e-01</arrh_b>
+            <arrh_c unit="eV">1.08e+00</arrh_c>
+            <el_en_loss unit="eV">-1.95</el_en_loss>
+            <special_number>-943</special_number>
+            <qdb_r_id>629</qdb_r_id>
+            <qdb_ds_id>621</qdb_ds_id>
+        </reaction>
+        <reaction id="28">
+            <reactants>e, H2</reactants>
+            <products>H2+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.29e-08</arrh_a>
+            <arrh_b>3.88e-01</arrh_b>
+            <arrh_c unit="eV">1.63e+01</arrh_c>
+            <el_en_loss unit="eV">15.35</el_en_loss>
+            <special_number>-18</special_number>
+            <qdb_r_id>389</qdb_r_id>
+            <qdb_ds_id>381</qdb_ds_id>
+        </reaction>
+        <reaction id="29">
+            <reactants>e, H</reactants>
+            <products>H+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.04e-08</arrh_a>
+            <arrh_b>3.66e-01</arrh_b>
+            <arrh_c unit="eV">1.48e+01</arrh_c>
+            <el_en_loss unit="eV">13.55</el_en_loss>
+            <special_number>-29</special_number>
+            <qdb_r_id>399</qdb_r_id>
+            <qdb_ds_id>391</qdb_ds_id>
+        </reaction>
+        <reaction id="30">
+            <reactants>e, H*</reactants>
+            <products>H+, e, e</products>
+            <arrh_a unit="cm3.s-1">2.42e-07</arrh_a>
+            <arrh_b>1.64e-02</arrh_b>
+            <arrh_c unit="eV">4.76e+00</arrh_c>
+            <el_en_loss unit="eV">3.45</el_en_loss>
+            <qdb_r_id>1859</qdb_r_id>
+            <qdb_ds_id>1828</qdb_ds_id>
+            <doi>10.1051/jphyscol:1979722</doi>
+        </reaction>
+        <reaction id="31">
+            <reactants>e, H2O</reactants>
+            <products>H2O+, e, e</products>
+            <arrh_a unit="cm3.s-1">8.02e-09</arrh_a>
+            <arrh_b>5.93e-01</arrh_b>
+            <arrh_c unit="eV">1.37e+01</arrh_c>
+            <el_en_loss unit="eV">13.5</el_en_loss>
+            <special_number>-1047</special_number>
+            <qdb_r_id>409</qdb_r_id>
+            <qdb_ds_id>401</qdb_ds_id>
+            <doi>10.1063/1.1799251</doi>
+        </reaction>
+        <reaction id="32">
+            <reactants>e, O2</reactants>
+            <products>O2+, e, e</products>
+            <arrh_a unit="cm3.s-1">7.08e-09</arrh_a>
+            <arrh_b>7.57e-01</arrh_b>
+            <arrh_c unit="eV">1.38e+01</arrh_c>
+            <el_en_loss unit="eV">12.05</el_en_loss>
+            <special_number>-415</special_number>
+            <qdb_r_id>596</qdb_r_id>
+            <qdb_ds_id>588</qdb_ds_id>
+        </reaction>
+        <reaction id="33">
+            <reactants>e, O</reactants>
+            <products>O+, e, e</products>
+            <arrh_a unit="cm3.s-1">4.82e-09</arrh_a>
+            <arrh_b>7.35e-01</arrh_b>
+            <arrh_c unit="eV">1.31e+01</arrh_c>
+            <el_en_loss unit="eV">13.6</el_en_loss>
+            <special_number>-941</special_number>
+            <qdb_r_id>609</qdb_r_id>
+            <qdb_ds_id>601</qdb_ds_id>
+            <doi>10.1063/1.555872</doi>
+        </reaction>
+        <reaction id="34">
+            <reactants>e, O2*</reactants>
+            <products>O2+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.3e-09</arrh_a>
+            <arrh_b>1.1</arrh_b>
+            <arrh_c unit="eV">11.1</arrh_c>
+            <el_en_loss unit="eV">11.1</el_en_loss>
+            <qdb_r_id>2066</qdb_r_id>
+            <qdb_ds_id>2047</qdb_ds_id>
+            <doi>10.1016/s0031-9163(64)91501-x</doi>
+        </reaction>
+        <reaction id="35">
+            <reactants>e, O*</reactants>
+            <products>O+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.56e-08</arrh_a>
+            <arrh_b>2.92e-01</arrh_b>
+            <arrh_c unit="eV">1.33e+01</arrh_c>
+            <el_en_loss unit="eV">11.65</el_en_loss>
+            <special_number>-944</special_number>
+            <qdb_r_id>630</qdb_r_id>
+            <qdb_ds_id>622</qdb_ds_id>
+        </reaction>
+        <reaction id="36">
+            <reactants>e, O2</reactants>
+            <products>O, O+, e, e</products>
+            <arrh_a unit="cm3.s-1">9.92e-10</arrh_a>
+            <arrh_b>1.10e+00</arrh_b>
+            <arrh_c unit="eV">2.03e+01</arrh_c>
+            <el_en_loss unit="eV">16.925</el_en_loss>
+            <special_number>-417</special_number>
+            <qdb_r_id>598</qdb_r_id>
+            <qdb_ds_id>590</qdb_ds_id>
+            <doi>10.1016/0168-1176(92)87037-f</doi>
+        </reaction>
+        <reaction id="37">
+            <reactants>e, O2</reactants>
+            <products>O-, O</products>
+            <arrh_a unit="cm3.s-1">6.74e-10</arrh_a>
+            <arrh_b>-1.02e+00</arrh_b>
+            <arrh_c unit="eV">5.78e+00</arrh_c>
+            <special_number>-401</special_number>
+            <qdb_r_id>4</qdb_r_id>
+            <qdb_ds_id>581</qdb_ds_id>
+        </reaction>
+        <reaction id="38">
+            <reactants>e, O3</reactants>
+            <products>O-, O2</products>
+            <arrh_a unit="cm3.s-1">1.87e-09</arrh_a>
+            <arrh_b>-1.30e+00</arrh_b>
+            <arrh_c unit="eV">9.84e-01</arrh_c>
+            <special_number>-1978</special_number>
+            <qdb_r_id>632</qdb_r_id>
+            <qdb_ds_id>624</qdb_ds_id>
+            <doi>10.1088/0963-0252/6/2/007</doi>
+        </reaction>
+        <reaction id="39">
+            <reactants>e, O3</reactants>
+            <products>O2-, O</products>
+            <arrh_a unit="cm3.s-1">8.81e-10</arrh_a>
+            <arrh_b>-1.42e+00</arrh_b>
+            <arrh_c unit="eV">1.06e+00</arrh_c>
+            <special_number>-1979</special_number>
+            <qdb_r_id>633</qdb_r_id>
+            <qdb_ds_id>625</qdb_ds_id>
+            <doi>10.1088/0963-0252/6/2/007</doi>
+        </reaction>
+        <reaction id="40">
+            <reactants>e, O, O2</reactants>
+            <products>O-, O2</products>
+            <arrh_a unit="cm6.s-1">1e-31</arrh_a>
+            <qdb_r_id>1181</qdb_r_id>
+            <qdb_ds_id>1173</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="41">
+            <reactants>e, O3, O2</reactants>
+            <products>O3-, O2</products>
+            <arrh_a unit="cm6.s-1">5.05e-31</arrh_a>
+            <arrh_b>-1.0</arrh_b>
+            <arrh_c unit="eV">0.06</arrh_c>
+            <qdb_r_id>1183</qdb_r_id>
+            <qdb_ds_id>1175</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="42">
+            <reactants>e, O2, M</reactants>
+            <products>O2-, M</products>
+            <arrh_a unit="cm6.s-1">3.6e-31</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>2065</qdb_r_id>
+            <qdb_ds_id>2046</qdb_ds_id>
+            <doi>10.1063/1.555841</doi>
+        </reaction>
+        <reaction id="43">
+            <reactants>e, O-</reactants>
+            <products>O, e, e</products>
+            <arrh_a unit="cm3.s-1">1.95e-12</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <arrh_c unit="eV">3.4</arrh_c>
+            <el_en_loss unit="eV">3.4</el_en_loss>
+            <qdb_r_id>2067</qdb_r_id>
+            <qdb_ds_id>2048</qdb_ds_id>
+            <doi>10.1116/1.581096</doi>
+        </reaction>
+        <reaction id="44">
+            <reactants>e, H+</reactants>
+            <products>H</products>
+            <arrh_a unit="cm3.s-1">6.35e-13</arrh_a>
+            <arrh_b>-5.01e-01</arrh_b>
+            <arrh_c unit="eV">1.31e-02</arrh_c>
+            <special_number>-31</special_number>
+            <qdb_r_id>401</qdb_r_id>
+            <qdb_ds_id>393</qdb_ds_id>
+            <doi>10.1063/1.340989</doi>
+        </reaction>
+        <reaction id="45">
+            <reactants>e, H2+</reactants>
+            <products>H, H</products>
+            <arrh_a unit="cm3.s-1">4.92e-08</arrh_a>
+            <arrh_b>-5.01e-01</arrh_b>
+            <arrh_c unit="eV">2.70e-02</arrh_c>
+            <special_number>-23</special_number>
+            <qdb_r_id>394</qdb_r_id>
+            <qdb_ds_id>386</qdb_ds_id>
+            <doi>10.1063/1.331948</doi>
+        </reaction>
+        <reaction id="46">
+            <reactants>e, H3+</reactants>
+            <products>H, H2</products>
+            <arrh_a unit="cm3.s-1">6.39e-08</arrh_a>
+            <arrh_b>-4.35e-01</arrh_b>
+            <arrh_c unit="eV">1.89e-02</arrh_c>
+            <special_number>-24</special_number>
+            <qdb_r_id>430</qdb_r_id>
+            <qdb_ds_id>422</qdb_ds_id>
+            <doi>10.1016/0168-1176(95)04248-j</doi>
+        </reaction>
+        <reaction id="47">
+            <reactants>e, O2+</reactants>
+            <products>O, O</products>
+            <arrh_a unit="cm3.s-1">1.53e-08</arrh_a>
+            <arrh_b>-5.05e-01</arrh_b>
+            <arrh_c unit="eV">1.32e-02</arrh_c>
+            <special_number>-2259</special_number>
+            <qdb_r_id>600</qdb_r_id>
+            <qdb_ds_id>592</qdb_ds_id>
+            <doi>10.1016/0370-1573(90)90159-y</doi>
+        </reaction>
+        <reaction id="48">
+            <reactants>e, H2</reactants>
+            <products>H, H, e</products>
+            <arrh_a unit="cm3.s-1">1.02e-07</arrh_a>
+            <arrh_b>-5.38e-01</arrh_b>
+            <arrh_c unit="eV">1.15e+01</arrh_c>
+            <el_en_loss unit="eV">8.8</el_en_loss>
+            <special_number>-17</special_number>
+            <qdb_r_id>388</qdb_r_id>
+            <qdb_ds_id>380</qdb_ds_id>
+        </reaction>
+        <reaction id="49">
+            <reactants>e, H2+</reactants>
+            <products>H+, H, e</products>
+            <arrh_a unit="cm3.s-1">9.90e-08</arrh_a>
+            <arrh_b>1.07e-01</arrh_b>
+            <arrh_c unit="eV">1.90e-01</arrh_c>
+            <special_number>-22</special_number>
+            <qdb_r_id>393</qdb_r_id>
+            <qdb_ds_id>385</qdb_ds_id>
+        </reaction>
+        <reaction id="50">
+            <reactants>e, H3+</reactants>
+            <products>H+, H2, e</products>
+            <arrh_a unit="cm3.s-1">9.91e-08</arrh_a>
+            <arrh_b>3.73e-01</arrh_b>
+            <arrh_c unit="eV">1.45e+01</arrh_c>
+            <el_en_loss unit="eV">14.9</el_en_loss>
+            <special_number>-2241</special_number>
+            <qdb_r_id>429</qdb_r_id>
+            <qdb_ds_id>421</qdb_ds_id>
+            <doi>10.1063/1.331948</doi>
+        </reaction>
+        <reaction id="51">
+            <reactants>e, O2</reactants>
+            <products>e, O, O</products>
+            <arrh_a unit="cm3.s-1">1.75e-08</arrh_a>
+            <arrh_b>-1.28e+00</arrh_b>
+            <arrh_c unit="eV">7.38e+00</arrh_c>
+            <el_en_loss unit="eV">4.5</el_en_loss>
+            <special_number>-411</special_number>
+            <qdb_r_id>592</qdb_r_id>
+            <qdb_ds_id>584</qdb_ds_id>
+        </reaction>
+        <reaction id="52">
+            <reactants>H2+, e</reactants>
+            <products>H+, H+, e, e</products>
+            <arrh_a unit="cm3.s-1">2.12e-09</arrh_a>
+            <arrh_b>0.31</arrh_b>
+            <arrh_c unit="eV">23.3</arrh_c>
+            <el_en_loss unit="eV">23.3</el_en_loss>
+            <qdb_r_id>2237</qdb_r_id>
+            <qdb_ds_id>2249</qdb_ds_id>
+            <doi>10.1021/jp057182+</doi>
+        </reaction>
+        <reaction id="53">
+            <reactants>O, O3</reactants>
+            <products>O2*, O2</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <arrh_c unit="K">2300.0</arrh_c>
+            <qdb_r_id>6294</qdb_r_id>
+            <qdb_ds_id>6223</qdb_ds_id>
+        </reaction>
+        <reaction id="54">
+            <reactants>H2, H*</reactants>
+            <products>H, H2</products>
+            <arrh_a unit="cm3.s-1">1e-13</arrh_a>
+            <qdb_r_id>4246</qdb_r_id>
+            <qdb_ds_id>4306</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="55">
+            <reactants>H2O, H*</reactants>
+            <products>H, H2O</products>
+            <arrh_a unit="cm3.s-1">1e-13</arrh_a>
+            <qdb_r_id>13953</qdb_r_id>
+            <qdb_ds_id>13899</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="56">
+            <reactants>O2, H*</reactants>
+            <products>H, O2</products>
+            <arrh_a unit="cm3.s-1">1e-13</arrh_a>
+            <qdb_r_id>13950</qdb_r_id>
+            <qdb_ds_id>13896</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="57">
+            <reactants>O, H*</reactants>
+            <products>H, O</products>
+            <arrh_a unit="cm3.s-1">1e-13</arrh_a>
+            <qdb_r_id>13952</qdb_r_id>
+            <qdb_ds_id>13898</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="58">
+            <reactants>O3, H*</reactants>
+            <products>H, O3</products>
+            <arrh_a unit="cm3.s-1">1e-13</arrh_a>
+            <qdb_r_id>13951</qdb_r_id>
+            <qdb_ds_id>13897</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="59">
+            <reactants>O*, H2O</reactants>
+            <products>OH, OH</products>
+            <arrh_a unit="cm3.s-1">2.2e-11</arrh_a>
+            <qdb_r_id>1058</qdb_r_id>
+            <qdb_ds_id>1050</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="60">
+            <reactants>O2, O2*</reactants>
+            <products>O, O3</products>
+            <arrh_a unit="cm3.s-1">2.95e-21</arrh_a>
+            <qdb_r_id>6292</qdb_r_id>
+            <qdb_ds_id>6221</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="61">
+            <reactants>O*, O3</reactants>
+            <products>O2, O2</products>
+            <arrh_a unit="cm3.s-1">1.2e-10</arrh_a>
+            <qdb_r_id>6295</qdb_r_id>
+            <qdb_ds_id>6224</qdb_ds_id>
+            <doi>10.1063/1.556011</doi>
+        </reaction>
+        <reaction id="62">
+            <reactants>OH, H2</reactants>
+            <products>H2O, H</products>
+            <arrh_a unit="cm3.s-1">7.7e-12</arrh_a>
+            <arrh_c unit="K">2100.0</arrh_c>
+            <qdb_r_id>1018</qdb_r_id>
+            <qdb_ds_id>1010</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="63">
+            <reactants>H, O3</reactants>
+            <products>OH, O2</products>
+            <arrh_a unit="cm3.s-1">1.4e-10</arrh_a>
+            <arrh_c unit="K">470.0</arrh_c>
+            <qdb_r_id>1005</qdb_r_id>
+            <qdb_ds_id>997</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="64">
+            <reactants>H, HO2</reactants>
+            <products>OH, OH</products>
+            <arrh_a unit="cm3.s-1">8.1e-11</arrh_a>
+            <qdb_r_id>1006</qdb_r_id>
+            <qdb_ds_id>998</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="65">
+            <reactants>O, O3</reactants>
+            <products>O2, O2</products>
+            <arrh_a unit="cm3.s-1">8e-12</arrh_a>
+            <arrh_c unit="K">2060.0</arrh_c>
+            <qdb_r_id>987</qdb_r_id>
+            <qdb_ds_id>979</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="66">
+            <reactants>O, OH</reactants>
+            <products>O2, H</products>
+            <arrh_a unit="cm3.s-1">2.3e-11</arrh_a>
+            <arrh_c unit="K">-110.0</arrh_c>
+            <qdb_r_id>991</qdb_r_id>
+            <qdb_ds_id>983</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="67">
+            <reactants>O, HO2</reactants>
+            <products>O2, OH</products>
+            <arrh_a unit="cm3.s-1">2.7e-11</arrh_a>
+            <arrh_c unit="K">-224.0</arrh_c>
+            <qdb_r_id>992</qdb_r_id>
+            <qdb_ds_id>984</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="68">
+            <reactants>O, H2O2</reactants>
+            <products>HO2, OH</products>
+            <arrh_a unit="cm3.s-1">1.4e-12</arrh_a>
+            <arrh_c unit="K">2000.0</arrh_c>
+            <qdb_r_id>993</qdb_r_id>
+            <qdb_ds_id>985</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="69">
+            <reactants>OH, O3</reactants>
+            <products>HO2, O2</products>
+            <arrh_a unit="cm3.s-1">1.9e-12</arrh_a>
+            <arrh_c unit="K">1000.0</arrh_c>
+            <qdb_r_id>1019</qdb_r_id>
+            <qdb_ds_id>1011</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="70">
+            <reactants>OH, OH</reactants>
+            <products>H2O, O</products>
+            <arrh_a unit="cm3.s-1">4.2e-12</arrh_a>
+            <arrh_c unit="K">240.0</arrh_c>
+            <qdb_r_id>1020</qdb_r_id>
+            <qdb_ds_id>1012</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="71">
+            <reactants>OH, HO2</reactants>
+            <products>H2O, O2</products>
+            <arrh_a unit="cm3.s-1">4.8e-11</arrh_a>
+            <arrh_c unit="K">-250.0</arrh_c>
+            <qdb_r_id>1021</qdb_r_id>
+            <qdb_ds_id>1013</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="72">
+            <reactants>OH, H2O2</reactants>
+            <products>HO2, H2O</products>
+            <arrh_a unit="cm3.s-1">2.9e-12</arrh_a>
+            <arrh_c unit="K">160.0</arrh_c>
+            <qdb_r_id>1022</qdb_r_id>
+            <qdb_ds_id>1014</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="73">
+            <reactants>HO2, HO2</reactants>
+            <products>H2O2, O2</products>
+            <arrh_a unit="cm3.s-1">2.2e-13</arrh_a>
+            <arrh_c unit="K">-600.0</arrh_c>
+            <qdb_r_id>1027</qdb_r_id>
+            <qdb_ds_id>1019</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="74">
+            <reactants>O*, O3</reactants>
+            <products>O2, O, O</products>
+            <arrh_a unit="cm3.s-1">1.2e-10</arrh_a>
+            <qdb_r_id>6296</qdb_r_id>
+            <qdb_ds_id>6225</qdb_ds_id>
+            <doi>10.1063/1.556011</doi>
+        </reaction>
+        <reaction id="75">
+            <reactants>HO2, O3</reactants>
+            <products>OH, O2, O2</products>
+            <arrh_a unit="cm3.s-1">1.4e-14</arrh_a>
+            <arrh_c unit="K">-600.0</arrh_c>
+            <qdb_r_id>1028</qdb_r_id>
+            <qdb_ds_id>1020</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="76">
+            <reactants>H, H2+</reactants>
+            <products>H2, H+</products>
+            <arrh_a unit="cm3.s-1">6.4e-10</arrh_a>
+            <qdb_r_id>1458</qdb_r_id>
+            <qdb_ds_id>1450</qdb_ds_id>
+            <doi>10.1088/0953-4075/31/4/031</doi>
+        </reaction>
+        <reaction id="77">
+            <reactants>O+, H2O</reactants>
+            <products>H2O+, O</products>
+            <arrh_a unit="cm3.s-1">2.6e-09</arrh_a>
+            <qdb_r_id>1124</qdb_r_id>
+            <qdb_ds_id>1116</qdb_ds_id>
+            <doi>10.1023/a:1007021207704</doi>
+        </reaction>
+        <reaction id="78">
+            <reactants>H2O+, O2</reactants>
+            <products>O2+, H2O</products>
+            <arrh_a unit="cm3.s-1">4.1e-10</arrh_a>
+            <qdb_r_id>1125</qdb_r_id>
+            <qdb_ds_id>1117</qdb_ds_id>
+            <doi>10.1023/a:1007021207704</doi>
+        </reaction>
+        <reaction id="79">
+            <reactants>O+, O2</reactants>
+            <products>O2+, O</products>
+            <arrh_a unit="cm3.s-1">2e-11</arrh_a>
+            <arrh_b>-0.4</arrh_b>
+            <qdb_r_id>1123</qdb_r_id>
+            <qdb_ds_id>1115</qdb_ds_id>
+            <doi>10.1023/a:1007021207704</doi>
+        </reaction>
+        <reaction id="80">
+            <reactants>H2, H2+</reactants>
+            <products>H, H3+</products>
+            <arrh_a unit="cm3.s-1">2.08e-09</arrh_a>
+            <qdb_r_id>1459</qdb_r_id>
+            <qdb_ds_id>1451</qdb_ds_id>
+            <doi>10.1088/0953-4075/31/4/031</doi>
+        </reaction>
+        <reaction id="81">
+            <reactants>O2-, O</reactants>
+            <products>O2, O-</products>
+            <arrh_a unit="cm3.s-1">3.3e-10</arrh_a>
+            <qdb_r_id>1207</qdb_r_id>
+            <qdb_ds_id>1199</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="82">
+            <reactants>O2-, O3</reactants>
+            <products>O2, O3-</products>
+            <arrh_a unit="cm3.s-1">4e-10</arrh_a>
+            <qdb_r_id>1208</qdb_r_id>
+            <qdb_ds_id>1200</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="83">
+            <reactants>O2-, O2</reactants>
+            <products>O2, O2, e</products>
+            <arrh_a unit="cm3.s-1">2.7e-10</arrh_a>
+            <arrh_b>0.5</arrh_b>
+            <arrh_c unit="K">5590.0</arrh_c>
+            <qdb_r_id>1189</qdb_r_id>
+            <qdb_ds_id>1181</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="84">
+            <reactants>O3-, O</reactants>
+            <products>O2, O2, e</products>
+            <arrh_a unit="cm3.s-1">3e-10</arrh_a>
+            <qdb_r_id>1200</qdb_r_id>
+            <qdb_ds_id>1192</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="85">
+            <reactants>O2*, O2-</reactants>
+            <products>O2, O2, e</products>
+            <arrh_a unit="cm3.s-1">2e-10</arrh_a>
+            <qdb_r_id>6241</qdb_r_id>
+            <qdb_ds_id>6169</qdb_ds_id>
+        </reaction>
+        <reaction id="86">
+            <reactants>O-, O2</reactants>
+            <products>O3, e</products>
+            <arrh_a unit="cm3.s-1">5e-15</arrh_a>
+            <qdb_r_id>1202</qdb_r_id>
+            <qdb_ds_id>1194</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="87">
+            <reactants>O-, O</reactants>
+            <products>O2, e</products>
+            <arrh_a unit="cm3.s-1">3e-10</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>2</qdb_r_id>
+            <qdb_ds_id>1238</qdb_ds_id>
+            <doi>10.1088/0963-0252/15/1/004</doi>
+        </reaction>
+        <reaction id="88">
+            <reactants>O-, O2*</reactants>
+            <products>O3, e</products>
+            <arrh_a unit="cm3.s-1">3e-10</arrh_a>
+            <qdb_r_id>1194</qdb_r_id>
+            <qdb_ds_id>1186</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="89">
+            <reactants>O2-, O</reactants>
+            <products>O3, e</products>
+            <arrh_a unit="cm3.s-1">1.5e-10</arrh_a>
+            <qdb_r_id>1197</qdb_r_id>
+            <qdb_ds_id>1189</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="90">
+            <reactants>O-, H2+</reactants>
+            <products>O, H2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1253</qdb_r_id>
+            <qdb_ds_id>1365</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="91">
+            <reactants>O2-, H2+</reactants>
+            <products>O2, H2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1353</qdb_r_id>
+            <qdb_ds_id>1345</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="92">
+            <reactants>O3-, H2+</reactants>
+            <products>O3, H2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1393</qdb_r_id>
+            <qdb_ds_id>1385</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="93">
+            <reactants>O-, H+</reactants>
+            <products>O, H</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1252</qdb_r_id>
+            <qdb_ds_id>1364</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="94">
+            <reactants>O2-, H+</reactants>
+            <products>O2, H</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1352</qdb_r_id>
+            <qdb_ds_id>1344</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="95">
+            <reactants>O3-, H+</reactants>
+            <products>O3, H</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1392</qdb_r_id>
+            <qdb_ds_id>1384</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="96">
+            <reactants>O-, H2O+</reactants>
+            <products>O, H2O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1254</qdb_r_id>
+            <qdb_ds_id>1366</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="97">
+            <reactants>O2-, H2O+</reactants>
+            <products>O2, H2O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1354</qdb_r_id>
+            <qdb_ds_id>1346</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="98">
+            <reactants>O3-, H2O+</reactants>
+            <products>O3, H2O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1394</qdb_r_id>
+            <qdb_ds_id>1386</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="99">
+            <reactants>O-, O2+</reactants>
+            <products>O2, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1243</qdb_r_id>
+            <qdb_ds_id>1378</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="100">
+            <reactants>O-, O2+</reactants>
+            <products>O, O2*</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6265</qdb_r_id>
+            <qdb_ds_id>6193</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="101">
+            <reactants>O-, O+</reactants>
+            <products>O, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1245</qdb_r_id>
+            <qdb_ds_id>1377</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="102">
+            <reactants>O-, O+</reactants>
+            <products>O, O*</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6266</qdb_r_id>
+            <qdb_ds_id>6194</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="103">
+            <reactants>O2-, O2+</reactants>
+            <products>O2, O2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1366</qdb_r_id>
+            <qdb_ds_id>1358</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="104">
+            <reactants>O2-, O2+</reactants>
+            <products>O2, O2*</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6285</qdb_r_id>
+            <qdb_ds_id>6214</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="105">
+            <reactants>O3-, O2+</reactants>
+            <products>O3, O2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1406</qdb_r_id>
+            <qdb_ds_id>1398</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="106">
+            <reactants>O3-, O2+</reactants>
+            <products>O3, O2*</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>6275</qdb_r_id>
+            <qdb_ds_id>6204</qdb_ds_id>
+            <doi>10.1063/1.555796</doi>
+        </reaction>
+        <reaction id="107">
+            <reactants>O2-, O+</reactants>
+            <products>O2, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1365</qdb_r_id>
+            <qdb_ds_id>1357</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="108">
+            <reactants>O2-, O+</reactants>
+            <products>O2, O*</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6286</qdb_r_id>
+            <qdb_ds_id>6215</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="109">
+            <reactants>O3-, O+</reactants>
+            <products>O3, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1405</qdb_r_id>
+            <qdb_ds_id>1397</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="110">
+            <reactants>O3-, O+</reactants>
+            <products>O3, O*</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>6276</qdb_r_id>
+            <qdb_ds_id>6205</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="111">
+            <reactants>O-, H3+</reactants>
+            <products>O, H2, H</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1255</qdb_r_id>
+            <qdb_ds_id>1367</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="112">
+            <reactants>O2-, H3+</reactants>
+            <products>O2, H2, H</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1355</qdb_r_id>
+            <qdb_ds_id>1347</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="113">
+            <reactants>O3-, H3+</reactants>
+            <products>O3, H2, H</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1395</qdb_r_id>
+            <qdb_ds_id>1387</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="114">
+            <reactants>O, O, M</reactants>
+            <products>O2, M</products>
+            <arrh_a unit="cm6.s-1">2.6e-34</arrh_a>
+            <arrh_b>-0.63</arrh_b>
+            <qdb_r_id>1034</qdb_r_id>
+            <qdb_ds_id>2052</qdb_ds_id>
+            <doi>10.1109/27.467998</doi>
+        </reaction>
+        <reaction id="115">
+            <reactants>O, O, M</reactants>
+            <products>O2*, M</products>
+            <arrh_a unit="cm6.s-1">1.9e-35</arrh_a>
+            <arrh_b>-0.63</arrh_b>
+            <qdb_r_id>2070</qdb_r_id>
+            <qdb_ds_id>2051</qdb_ds_id>
+            <doi>10.1109/27.467998</doi>
+        </reaction>
+    </reactions>
+</chemistry>

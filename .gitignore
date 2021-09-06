@@ -1,0 +1,21 @@
+# PyCharm
+.idea
+
+# Python
+**/__pycache__
+pygmol.egg-info
+pyproject.toml
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.pdf
+*.synctex.gz
+*.toc
+*.out
+
+# Repository
+scripts/*.py
+**/.temp

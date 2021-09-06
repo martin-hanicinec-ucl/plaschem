@@ -1,0 +1,3107 @@
+<chemistry>
+    <meta>
+        <comments>This is the Ar/O2/NF3 chemistry C33 from QDB. Some L-J parameters were added.</comments>
+    </meta>
+    <species>
+        <rp id="0">
+            <name>e</name>
+            <mass unit="amu">5.46E-04</mass>
+            <charge unit="e">-1</charge>
+            <hpem_name>E</hpem_name>
+            <qdb_id>1</qdb_id>
+        </rp>
+        <rp id="1">
+            <name>Ar</name>
+            <mass unit="amu">39.948</mass>
+            <lj_epsilon unit="K">93.3</lj_epsilon>
+            <lj_sigma unit="A">3.542</lj_sigma>
+            <hpem_name>AR</hpem_name>
+            <qdb_id>2</qdb_id>
+        </rp>
+        <rp id="2">
+            <name>Ar+</name>
+            <mass unit="amu">39.948</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">93.3</lj_epsilon>
+            <lj_sigma unit="A">3.542</lj_sigma>
+            <hpem_name>AR^</hpem_name>
+            <qdb_id>35</qdb_id>
+        </rp>
+        <rp id="3">
+            <name>Ar*</name>
+            <stateless>Ar</stateless>
+            <state>*</state>
+            <mass unit="amu">39.948</mass>
+            <lj_epsilon unit="K">93.3</lj_epsilon>
+            <lj_sigma unit="A">3.542</lj_sigma>
+            <hpem_name>AR*</hpem_name>
+            <qdb_id>3</qdb_id>
+        </rp>
+        <rp id="4">
+            <name>Ar**</name>
+            <stateless>Ar</stateless>
+            <state>**</state>
+            <mass unit="amu">39.948</mass>
+            <lj_epsilon unit="K">93.3</lj_epsilon>
+            <lj_sigma unit="A">3.542</lj_sigma>
+            <hpem_name>AR**</hpem_name>
+            <qdb_id>33</qdb_id>
+        </rp>
+        <rp id="5">
+            <name>O</name>
+            <mass unit="amu">15.9994</mass>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O</hpem_name>
+            <qdb_id>15</qdb_id>
+            <stick_coef>0.01</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.5</r>
+            </ret_coefs>
+        </rp>
+        <rp id="6">
+            <name>O+</name>
+            <mass unit="amu">15.9994</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O^</hpem_name>
+            <qdb_id>9</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.005</r>
+                <r rp="O">0.99</r>
+            </ret_coefs>
+        </rp>
+        <rp id="7">
+            <name>O-</name>
+            <mass unit="amu">15.9994</mass>
+            <charge unit="e">-1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O-</hpem_name>
+            <qdb_id>16</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.005</r>
+                <r rp="O">0.99</r>
+            </ret_coefs>
+        </rp>
+        <rp id="8">
+            <name>O*</name>
+            <stateless>O</stateless>
+            <state>*</state>
+            <mass unit="amu">15.9994</mass>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.05</lj_sigma>
+            <hpem_name>O*</hpem_name>
+            <qdb_id>141</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.005</r>
+                <r rp="O">0.99</r>
+            </ret_coefs>
+        </rp>
+        <rp id="9">
+            <name>O2</name>
+            <mass unit="amu">31.9988</mass>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.47</lj_sigma>
+            <hpem_name>O2</hpem_name>
+            <qdb_id>14</qdb_id>
+        </rp>
+        <rp id="10">
+            <name>O2+</name>
+            <mass unit="amu">31.9988</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.47</lj_sigma>
+            <hpem_name>O2^</hpem_name>
+            <qdb_id>54</qdb_id>
+        </rp>
+        <rp id="11">
+            <name>O2-</name>
+            <mass unit="amu">31.9988</mass>
+            <charge unit="e">-1</charge>
+            <lj_epsilon unit="K">106.7</lj_epsilon>
+            <lj_sigma unit="A">3.47</lj_sigma>
+            <hpem_name>O2-</hpem_name>
+            <qdb_id>55</qdb_id>
+        </rp>
+        <rp id="12">
+            <name>O2*</name>
+            <stateless>O2</stateless>
+            <state>*</state>
+            <mass unit="amu">31.9988</mass>
+            <lj_epsilon unit="K">113.0</lj_epsilon>
+            <lj_sigma unit="A">2.44</lj_sigma>
+            <hpem_name>O2*</hpem_name>
+            <qdb_id>139</qdb_id>
+        </rp>
+        <rp id="13">
+            <name>O3</name>
+            <mass unit="amu">47.9982</mass>
+            <lj_epsilon unit="K">400.0</lj_epsilon>
+            <lj_sigma unit="A">4.0</lj_sigma>
+            <hpem_name>O3</hpem_name>
+            <qdb_id>175</qdb_id>
+            <stick_coef>0.15</stick_coef>
+            <ret_coefs>
+                <r rp="O2">1.0</r>
+                <r rp="O">1.0</r>
+            </ret_coefs>
+        </rp>
+        <rp id="14">
+            <name>O3-</name>
+            <mass unit="amu">47.9982</mass>
+            <charge unit="e">-1</charge>
+            <lj_epsilon unit="K">400.0</lj_epsilon>
+            <lj_sigma unit="A">4.0</lj_sigma>
+            <hpem_name>O3-</hpem_name>
+            <qdb_id>218</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="O2">0.075</r>
+                <r rp="O">0.075</r>
+                <r rp="O3">0.85</r>
+            </ret_coefs>
+        </rp>
+        <rp id="15">
+            <name>N</name>
+            <mass unit="amu">14.0067</mass>
+            <lj_epsilon unit="K">71.4</lj_epsilon>
+            <lj_sigma unit="A">3.298</lj_sigma>
+            <hpem_name>N</hpem_name>
+            <qdb_id>46</qdb_id>
+            <stick_coef>0.01</stick_coef>
+            <ret_coefs>
+                <r rp="N2">0.5</r>
+            </ret_coefs>
+        </rp>
+        <rp id="16">
+            <name>N+</name>
+            <mass unit="amu">14.0067</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">71.4</lj_epsilon>
+            <lj_sigma unit="A">3.298</lj_sigma>
+            <hpem_name>N^</hpem_name>
+            <qdb_id>47</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="N2">0.005</r>
+                <r rp="N">0.99</r>
+            </ret_coefs>
+        </rp>
+        <rp id="17">
+            <name>N*</name>
+            <stateless>N</stateless>
+            <state>*</state>
+            <mass unit="amu">14.0067</mass>
+            <lj_epsilon unit="K">71.4</lj_epsilon>
+            <lj_sigma unit="A">3.298</lj_sigma>
+            <hpem_name>N*</hpem_name>
+            <qdb_id>191</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="N2">0.005</r>
+                <r rp="N">0.99</r>
+            </ret_coefs>
+        </rp>
+        <rp id="18">
+            <name>N2</name>
+            <mass unit="amu">28.0134</mass>
+            <lj_epsilon unit="K">71.4</lj_epsilon>
+            <lj_sigma unit="A">3.8</lj_sigma>
+            <hpem_name>N2</hpem_name>
+            <qdb_id>10</qdb_id>
+        </rp>
+        <rp id="19">
+            <name>N2+</name>
+            <mass unit="amu">28.0134</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">71.4</lj_epsilon>
+            <lj_sigma unit="A">3.8</lj_sigma>
+            <hpem_name>N2^</hpem_name>
+            <qdb_id>45</qdb_id>
+        </rp>
+        <rp id="20">
+            <name>N2*</name>
+            <stateless>N2</stateless>
+            <state>*</state>
+            <mass unit="amu">28.0134</mass>
+            <lj_epsilon unit="K">71.4</lj_epsilon>
+            <lj_sigma unit="A">3.8</lj_sigma>
+            <hpem_name>N2*</hpem_name>
+            <qdb_id>44</qdb_id>
+        </rp>
+        <rp id="21">
+            <name>F</name>
+            <mass unit="amu">18.998403</mass>
+            <lj_epsilon unit="K">112.6</lj_epsilon>
+            <lj_sigma unit="A">2.97</lj_sigma>
+            <hpem_name>F</hpem_name>
+            <qdb_id>106</qdb_id>
+            <stick_coef>0.01</stick_coef>
+            <ret_coefs>
+                <r rp="F2">0.5</r>
+            </ret_coefs>
+        </rp>
+        <rp id="22">
+            <name>F+</name>
+            <mass unit="amu">18.998403</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">112.6</lj_epsilon>
+            <lj_sigma unit="A">2.97</lj_sigma>
+            <hpem_name>F^</hpem_name>
+            <qdb_id>112</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="F2">0.005</r>
+                <r rp="F">0.99</r>
+            </ret_coefs>
+        </rp>
+        <rp id="23">
+            <name>F-</name>
+            <mass unit="amu">18.998403</mass>
+            <charge unit="e">-1</charge>
+            <lj_epsilon unit="K">112.6</lj_epsilon>
+            <lj_sigma unit="A">2.97</lj_sigma>
+            <hpem_name>F-</hpem_name>
+            <qdb_id>61</qdb_id>
+            <stick_coef>1.0</stick_coef>
+            <ret_coefs>
+                <r rp="F2">0.005</r>
+                <r rp="F">0.99</r>
+            </ret_coefs>
+        </rp>
+        <rp id="24">
+            <name>F2</name>
+            <mass unit="amu">37.996806</mass>
+            <lj_epsilon unit="K">112.6</lj_epsilon>
+            <lj_sigma unit="A">3.357</lj_sigma>
+            <hpem_name>F2</hpem_name>
+            <qdb_id>59</qdb_id>
+        </rp>
+        <rp id="25">
+            <name>F2+</name>
+            <mass unit="amu">37.996806</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">112.6</lj_epsilon>
+            <lj_sigma unit="A">3.357</lj_sigma>
+            <hpem_name>F2^</hpem_name>
+            <qdb_id>60</qdb_id>
+        </rp>
+        <rp id="26">
+            <name>NO</name>
+            <mass unit="amu">30.0061</mass>
+            <lj_epsilon unit="K">116.7</lj_epsilon>
+            <lj_sigma unit="A">3.492</lj_sigma>
+            <hpem_name>NO</hpem_name>
+            <qdb_id>174</qdb_id>
+        </rp>
+        <rp id="27">
+            <name>NO+</name>
+            <mass unit="amu">30.0061</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">116.7</lj_epsilon>
+            <lj_sigma unit="A">3.492</lj_sigma>
+            <hpem_name>NO^</hpem_name>
+            <qdb_id>262</qdb_id>
+        </rp>
+        <rp id="28">
+            <name>N2O</name>
+            <mass unit="amu">44.0128</mass>
+            <lj_epsilon unit="K">232.4</lj_epsilon>
+            <lj_sigma unit="A">3.83</lj_sigma>
+            <hpem_name>N2O</hpem_name>
+            <qdb_id>8</qdb_id>
+        </rp>
+        <rp id="29">
+            <name>N2O+</name>
+            <mass unit="amu">44.0128</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">232.4</lj_epsilon>
+            <lj_sigma unit="A">3.83</lj_sigma>
+            <hpem_name>N2O^</hpem_name>
+            <qdb_id>56</qdb_id>
+        </rp>
+        <rp id="30">
+            <name>NO2</name>
+            <mass unit="amu">46.0055</mass>
+            <lj_epsilon unit="K">116.7</lj_epsilon>
+            <lj_sigma unit="A">3.492</lj_sigma>
+            <hpem_name>NO2</hpem_name>
+            <qdb_id>276</qdb_id>
+            <comments>L-J copy of NO</comments>
+        </rp>
+        <rp id="31">
+            <name>NF</name>
+            <mass unit="amu">33.005103</mass>
+            <lj_epsilon unit="K">175.0</lj_epsilon>
+            <lj_sigma unit="A">3.5</lj_sigma>
+            <hpem_name>NF</hpem_name>
+            <qdb_id>208</qdb_id>
+        </rp>
+        <rp id="32">
+            <name>NF+</name>
+            <mass unit="amu">33.005103</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">175.0</lj_epsilon>
+            <lj_sigma unit="A">3.5</lj_sigma>
+            <hpem_name>NF^</hpem_name>
+            <qdb_id>211</qdb_id>
+        </rp>
+        <rp id="33">
+            <name>NF2</name>
+            <mass unit="amu">52.003506</mass>
+            <lj_epsilon unit="K">175.0</lj_epsilon>
+            <lj_sigma unit="A">3.75</lj_sigma>
+            <hpem_name>NF2</hpem_name>
+            <qdb_id>207</qdb_id>
+        </rp>
+        <rp id="34">
+            <name>NF2+</name>
+            <mass unit="amu">52.003506</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">175.0</lj_epsilon>
+            <lj_sigma unit="A">3.75</lj_sigma>
+            <hpem_name>NF2^</hpem_name>
+            <qdb_id>210</qdb_id>
+        </rp>
+        <rp id="35">
+            <name>NF3</name>
+            <mass unit="amu">71.001909</mass>
+            <lj_epsilon unit="K">175.0</lj_epsilon>
+            <lj_sigma unit="A">4.154</lj_sigma>
+            <hpem_name>NF3</hpem_name>
+            <qdb_id>206</qdb_id>
+        </rp>
+        <rp id="36">
+            <name>NF3+</name>
+            <mass unit="amu">71.001909</mass>
+            <charge unit="e">1</charge>
+            <lj_epsilon unit="K">175.0</lj_epsilon>
+            <lj_sigma unit="A">4.154</lj_sigma>
+            <hpem_name>NF3^</hpem_name>
+            <qdb_id>209</qdb_id>
+        </rp>
+        <rp id="37">
+            <name>FO</name>
+            <mass unit="amu">34.997803</mass>
+            <lj_epsilon unit="K">125.0</lj_epsilon>
+            <lj_sigma unit="A">3.3</lj_sigma>
+            <hpem_name>FO</hpem_name>
+            <qdb_id>200</qdb_id>
+        </rp>
+        <rp id="38">
+            <name>FNO</name>
+            <mass unit="amu">49.004503</mass>
+            <lj_epsilon unit="K">116.7</lj_epsilon>
+            <lj_sigma unit="A">3.492</lj_sigma>
+            <hpem_name>FNO</hpem_name>
+            <qdb_id>1010</qdb_id>
+            <comments>L-J copy of NO</comments>
+        </rp>
+        <rp id="999">
+            <name>M</name>
+            <hpem_name>M</hpem_name>
+            <qdb_id>293</qdb_id>
+        </rp>
+    </species>
+    <reactions>
+        <reaction id="1">
+            <reactants>e, Ar</reactants>
+            <products>e, Ar</products>
+            <arrh_a unit="cm3.s-1">2.66e-07</arrh_a>
+            <arrh_b>-1.28e-02</arrh_b>
+            <arrh_c unit="eV">3.15e+00</arrh_c>
+            <special_number>-1</special_number>
+            <qdb_r_id>12</qdb_r_id>
+            <qdb_ds_id>3</qdb_ds_id>
+            <doi>10.1103/physreva.34.1007</doi>
+        </reaction>
+        <reaction id="2">
+            <reactants>e, Ar+</reactants>
+            <products>Ar+, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.82e-02</arrh_c>
+            <special_number>-8</special_number>
+            <qdb_r_id>21</qdb_r_id>
+            <qdb_ds_id>48</qdb_ds_id>
+            <doi>10.1063/1.109440</doi>
+        </reaction>
+        <reaction id="3">
+            <reactants>e, O2</reactants>
+            <products>O2, e</products>
+            <arrh_a unit="cm3.s-1">3.93e-08</arrh_a>
+            <arrh_b>6.28e-01</arrh_b>
+            <arrh_c unit="eV">-1.98e-02</arrh_c>
+            <special_number>-400</special_number>
+            <qdb_r_id>588</qdb_r_id>
+            <qdb_ds_id>580</qdb_ds_id>
+        </reaction>
+        <reaction id="4">
+            <reactants>e, O2+</reactants>
+            <products>O2+, e</products>
+            <arrh_a unit="cm3.s-1">1.61e-04</arrh_a>
+            <arrh_b>-1.22e+00</arrh_b>
+            <arrh_c unit="eV">3.82e-02</arrh_c>
+            <special_number>-2258</special_number>
+            <qdb_r_id>599</qdb_r_id>
+            <qdb_ds_id>591</qdb_ds_id>
+            <doi>10.1016/0370-1573(90)90159-y</doi>
+        </reaction>
+        <reaction id="5">
+            <reactants>e, F</reactants>
+            <products>e, F</products>
+            <arrh_a unit="cm3.s-1">3.30e-08</arrh_a>
+            <arrh_b>5.00e-01</arrh_b>
+            <arrh_c unit="eV">4.24e-01</arrh_c>
+            <qdb_r_id>5239</qdb_r_id>
+            <qdb_ds_id>5296</qdb_ds_id>
+            <doi>10.1103/physreva.89.052713</doi>
+        </reaction>
+        <reaction id="6">
+            <reactants>e, F2</reactants>
+            <products>F2, e</products>
+            <arrh_a unit="cm3.s-1">1.98e-07</arrh_a>
+            <arrh_b>-1.87e-02</arrh_b>
+            <arrh_c unit="eV">4.34e-01</arrh_c>
+            <special_number>-924</special_number>
+            <qdb_r_id>346</qdb_r_id>
+            <qdb_ds_id>338</qdb_ds_id>
+            <doi>10.1063/1.332797</doi>
+        </reaction>
+        <reaction id="7">
+            <reactants>e, NO</reactants>
+            <products>NO, e</products>
+            <arrh_a unit="cm3.s-1">7.06e-08</arrh_a>
+            <arrh_b>3.64e-01</arrh_b>
+            <arrh_c unit="eV">5.77e-02</arrh_c>
+            <special_number>-2272</special_number>
+            <qdb_r_id>557</qdb_r_id>
+            <qdb_ds_id>549</qdb_ds_id>
+            <doi>10.1016/s0009-2614(01)01310-0</doi>
+        </reaction>
+        <reaction id="8">
+            <reactants>e, N2O</reactants>
+            <products>N2O, e</products>
+            <arrh_a unit="cm3.s-1">1.01e-07</arrh_a>
+            <arrh_b>3.23e-01</arrh_b>
+            <arrh_c unit="eV">6.59e-01</arrh_c>
+            <special_number>-651</special_number>
+            <qdb_r_id>506</qdb_r_id>
+            <qdb_ds_id>498</qdb_ds_id>
+        </reaction>
+        <reaction id="9">
+            <reactants>e, NF3</reactants>
+            <products>NF3, e</products>
+            <arrh_a unit="cm3.s-1">6.66e-08</arrh_a>
+            <arrh_b>4.05e-01</arrh_b>
+            <arrh_c unit="eV">-1.86e-01</arrh_c>
+            <special_number>-1149</special_number>
+            <qdb_r_id>567</qdb_r_id>
+            <qdb_ds_id>559</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="10">
+            <reactants>e, NF2</reactants>
+            <products>NF2, e</products>
+            <arrh_a unit="cm3.s-1">6.64e-08</arrh_a>
+            <arrh_b>4.07e-01</arrh_b>
+            <arrh_c unit="eV">-1.86e-01</arrh_c>
+            <special_number>-1159</special_number>
+            <qdb_r_id>577</qdb_r_id>
+            <qdb_ds_id>569</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="11">
+            <reactants>e, NF</reactants>
+            <products>NF, e</products>
+            <arrh_a unit="cm3.s-1">6.64e-08</arrh_a>
+            <arrh_b>4.07e-01</arrh_b>
+            <arrh_c unit="eV">-1.86e-01</arrh_c>
+            <special_number>-1166</special_number>
+            <qdb_r_id>584</qdb_r_id>
+            <qdb_ds_id>576</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="12">
+            <reactants>e, Ar</reactants>
+            <products>Ar*, e</products>
+            <arrh_a unit="cm3.s-1">1.54e-09</arrh_a>
+            <arrh_b>4.05e-01</arrh_b>
+            <arrh_c unit="eV">1.21e+01</arrh_c>
+            <el_en_loss unit="eV">11.6</el_en_loss>
+            <special_number>-2</special_number>
+            <qdb_r_id>13</qdb_r_id>
+            <qdb_ds_id>4</qdb_ds_id>
+            <doi>10.1103/physreva.34.1007</doi>
+        </reaction>
+        <reaction id="13">
+            <reactants>e, Ar</reactants>
+            <products>Ar**, e</products>
+            <arrh_a unit="cm3.s-1">1.82e-08</arrh_a>
+            <arrh_b>1.88e-01</arrh_b>
+            <arrh_c unit="eV">1.28e+01</arrh_c>
+            <el_en_loss unit="eV">13.1</el_en_loss>
+            <special_number>-3</special_number>
+            <qdb_r_id>14</qdb_r_id>
+            <qdb_ds_id>5</qdb_ds_id>
+            <doi>10.1103/physreva.34.1007</doi>
+        </reaction>
+        <reaction id="14">
+            <reactants>e, Ar*</reactants>
+            <products>Ar**, e</products>
+            <arrh_a unit="cm3.s-1">7.91e-07</arrh_a>
+            <arrh_b>2.81e-01</arrh_b>
+            <arrh_c unit="eV">1.90e+00</arrh_c>
+            <el_en_loss unit="eV">1.575</el_en_loss>
+            <special_number>-5</special_number>
+            <qdb_r_id>19</qdb_r_id>
+            <qdb_ds_id>10</qdb_ds_id>
+        </reaction>
+        <reaction id="15">
+            <reactants>e, O</reactants>
+            <products>e, O*</products>
+            <arrh_a unit="cm3.s-1">1.06e-08</arrh_a>
+            <arrh_b>-3.97e-01</arrh_b>
+            <arrh_c unit="eV">3.44e+00</arrh_c>
+            <el_en_loss unit="eV">1.95</el_en_loss>
+            <qdb_r_id>18010</qdb_r_id>
+            <qdb_ds_id>3684</qdb_ds_id>
+            <doi>10.1063/1.555872</doi>
+        </reaction>
+        <reaction id="16">
+            <reactants>e, O</reactants>
+            <products>e, O*</products>
+            <arrh_a unit="cm3.s-1">1.16e-09</arrh_a>
+            <arrh_b>-1.75e-01</arrh_b>
+            <arrh_c unit="eV">5.08e+00</arrh_c>
+            <el_en_loss unit="eV">4.175</el_en_loss>
+            <qdb_r_id>18010</qdb_r_id>
+            <qdb_ds_id>3685</qdb_ds_id>
+            <doi>10.1063/1.555872</doi>
+        </reaction>
+        <reaction id="17">
+            <reactants>e, O2</reactants>
+            <products>O2*, e</products>
+            <arrh_a unit="cm3.s-1">2.76e-09</arrh_a>
+            <arrh_b>-3.39e-01</arrh_b>
+            <arrh_c unit="eV">3.27e+00</arrh_c>
+            <el_en_loss unit="eV">0.975</el_en_loss>
+            <special_number>-407</special_number>
+            <qdb_r_id>594</qdb_r_id>
+            <qdb_ds_id>582</qdb_ds_id>
+        </reaction>
+        <reaction id="18">
+            <reactants>e, N</reactants>
+            <products>e, N*</products>
+            <arrh_a unit="cm3.s-1">2.62e-08</arrh_a>
+            <arrh_b>-3.03e-01</arrh_b>
+            <arrh_c unit="eV">2.97e+00</arrh_c>
+            <el_en_loss unit="eV">2.375</el_en_loss>
+            <qdb_r_id>18024</qdb_r_id>
+            <qdb_ds_id>3661</qdb_ds_id>
+            <doi>10.1103/physrev.178.218</doi>
+        </reaction>
+        <reaction id="19">
+            <reactants>e, N</reactants>
+            <products>e, N*</products>
+            <arrh_a unit="cm3.s-1">1.04e-08</arrh_a>
+            <arrh_b>-3.31e-01</arrh_b>
+            <arrh_c unit="eV">4.56e+00</arrh_c>
+            <el_en_loss unit="eV">3.55</el_en_loss>
+            <qdb_r_id>18024</qdb_r_id>
+            <qdb_ds_id>3662</qdb_ds_id>
+            <doi>10.1103/physrev.178.218</doi>
+        </reaction>
+        <reaction id="20">
+            <reactants>e, N2</reactants>
+            <products>e, N2*</products>
+            <arrh_a unit="cm3.s-1">9.43e-08</arrh_a>
+            <arrh_b>-7.21e-01</arrh_b>
+            <arrh_c unit="eV">8.80e+00</arrh_c>
+            <el_en_loss unit="eV">6.15</el_en_loss>
+            <qdb_r_id>18026</qdb_r_id>
+            <qdb_ds_id>2341</qdb_ds_id>
+            <doi>10.1103/physreva.31.2932</doi>
+        </reaction>
+        <reaction id="21">
+            <reactants>e, Ar*</reactants>
+            <products>Ar, e</products>
+            <arrh_a unit="cm3.s-1">1.96e-09</arrh_a>
+            <arrh_b>3.19e-01</arrh_b>
+            <arrh_c unit="eV">9.85e-01</arrh_c>
+            <el_en_loss unit="eV">-11.6</el_en_loss>
+            <special_number>-274</special_number>
+            <qdb_r_id>18</qdb_r_id>
+            <qdb_ds_id>9</qdb_ds_id>
+            <doi>10.1103/physreva.34.1007,</doi>
+        </reaction>
+        <reaction id="22">
+            <reactants>e, Ar**</reactants>
+            <products>Ar, e</products>
+            <arrh_a unit="cm3.s-1">2.26e-08</arrh_a>
+            <arrh_b>1.02e-01</arrh_b>
+            <arrh_c unit="eV">4.41e-02</arrh_c>
+            <el_en_loss unit="eV">-13.1</el_en_loss>
+            <special_number>-275</special_number>
+            <qdb_r_id>24</qdb_r_id>
+            <qdb_ds_id>15</qdb_ds_id>
+            <doi>10.1103/physreva.34.1007,</doi>
+        </reaction>
+        <reaction id="23">
+            <reactants>e, Ar**</reactants>
+            <products>Ar*, e</products>
+            <arrh_a unit="cm3.s-1">6.86e-07</arrh_a>
+            <arrh_b>3.37e-01</arrh_b>
+            <arrh_c unit="eV">1.02e-01</arrh_c>
+            <el_en_loss unit="eV">-1.575</el_en_loss>
+            <special_number>-277</special_number>
+            <qdb_r_id>25</qdb_r_id>
+            <qdb_ds_id>16</qdb_ds_id>
+        </reaction>
+        <reaction id="24">
+            <reactants>e, O*</reactants>
+            <products>O, e</products>
+            <arrh_a unit="cm3.s-1">5.82e-09</arrh_a>
+            <arrh_b>-1.97e-01</arrh_b>
+            <arrh_c unit="eV">1.08e+00</arrh_c>
+            <special_number>-943</special_number>
+            <qdb_r_id>629</qdb_r_id>
+            <qdb_ds_id>621</qdb_ds_id>
+        </reaction>
+        <reaction id="25">
+            <reactants>e, Ar</reactants>
+            <products>Ar+, e, e</products>
+            <arrh_a unit="cm3.s-1">3.09e-08</arrh_a>
+            <arrh_b>4.46e-01</arrh_b>
+            <arrh_c unit="eV">1.70e+01</arrh_c>
+            <el_en_loss unit="eV">15.875</el_en_loss>
+            <special_number>-4</special_number>
+            <qdb_r_id>16</qdb_r_id>
+            <qdb_ds_id>7</qdb_ds_id>
+            <doi>10.1103/physreva.34.1007</doi>
+        </reaction>
+        <reaction id="26">
+            <reactants>e, Ar*</reactants>
+            <products>Ar+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.42e-07</arrh_a>
+            <arrh_b>1.95e-01</arrh_b>
+            <arrh_c unit="eV">4.38e+00</arrh_c>
+            <el_en_loss unit="eV">4.425</el_en_loss>
+            <special_number>-6</special_number>
+            <qdb_r_id>20</qdb_r_id>
+            <qdb_ds_id>11</qdb_ds_id>
+            <doi>10.1103/physrev.137.a1058,</doi>
+        </reaction>
+        <reaction id="27">
+            <reactants>e, Ar**</reactants>
+            <products>Ar+, e, e</products>
+            <arrh_a unit="cm3.s-1">3.45e-07</arrh_a>
+            <arrh_b>-1.77e-02</arrh_b>
+            <arrh_c unit="eV">4.11e+00</arrh_c>
+            <el_en_loss unit="eV">2.9</el_en_loss>
+            <special_number>-7</special_number>
+            <qdb_r_id>27</qdb_r_id>
+            <qdb_ds_id>18</qdb_ds_id>
+            <doi>10.1016/s0031-9163(64)91501-x</doi>
+        </reaction>
+        <reaction id="28">
+            <reactants>e, O</reactants>
+            <products>O+, e, e</products>
+            <arrh_a unit="cm3.s-1">4.82e-09</arrh_a>
+            <arrh_b>7.35e-01</arrh_b>
+            <arrh_c unit="eV">1.31e+01</arrh_c>
+            <el_en_loss unit="eV">13.6</el_en_loss>
+            <special_number>-941</special_number>
+            <qdb_r_id>609</qdb_r_id>
+            <qdb_ds_id>601</qdb_ds_id>
+            <doi>10.1063/1.555872</doi>
+        </reaction>
+        <reaction id="29">
+            <reactants>e, O*</reactants>
+            <products>O+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.56e-08</arrh_a>
+            <arrh_b>2.92e-01</arrh_b>
+            <arrh_c unit="eV">1.33e+01</arrh_c>
+            <el_en_loss unit="eV">11.65</el_en_loss>
+            <special_number>-944</special_number>
+            <qdb_r_id>630</qdb_r_id>
+            <qdb_ds_id>622</qdb_ds_id>
+        </reaction>
+        <reaction id="30">
+            <reactants>e, O2</reactants>
+            <products>O2+, e, e</products>
+            <arrh_a unit="cm3.s-1">7.08e-09</arrh_a>
+            <arrh_b>7.57e-01</arrh_b>
+            <arrh_c unit="eV">1.38e+01</arrh_c>
+            <el_en_loss unit="eV">12.05</el_en_loss>
+            <special_number>-415</special_number>
+            <qdb_r_id>596</qdb_r_id>
+            <qdb_ds_id>588</qdb_ds_id>
+        </reaction>
+        <reaction id="31">
+            <reactants>e, O2*</reactants>
+            <products>O2+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.3e-09</arrh_a>
+            <arrh_b>1.1</arrh_b>
+            <arrh_c unit="eV">11.1</arrh_c>
+            <el_en_loss unit="eV">11.1</el_en_loss>
+            <qdb_r_id>2066</qdb_r_id>
+            <qdb_ds_id>2047</qdb_ds_id>
+            <doi>10.1016/s0031-9163(64)91501-x</doi>
+        </reaction>
+        <reaction id="32">
+            <reactants>e, F</reactants>
+            <products>F+, e, e</products>
+            <arrh_a unit="cm3.s-1">2.15e-09</arrh_a>
+            <arrh_b>8.72e-01</arrh_b>
+            <arrh_c unit="eV">1.60e+01</arrh_c>
+            <el_en_loss unit="eV">17.275</el_en_loss>
+            <special_number>-1029</special_number>
+            <qdb_r_id>367</qdb_r_id>
+            <qdb_ds_id>359</qdb_ds_id>
+        </reaction>
+        <reaction id="33">
+            <reactants>e, F2</reactants>
+            <products>F2+, e, e</products>
+            <arrh_a unit="cm3.s-1">2.96e-09</arrh_a>
+            <arrh_b>8.45e-01</arrh_b>
+            <arrh_c unit="eV">1.59e+01</arrh_c>
+            <el_en_loss unit="eV">15.525</el_en_loss>
+            <special_number>-931</special_number>
+            <qdb_r_id>353</qdb_r_id>
+            <qdb_ds_id>345</qdb_ds_id>
+            <doi>10.1063/1.332797</doi>
+        </reaction>
+        <reaction id="34">
+            <reactants>e, NO</reactants>
+            <products>NO+, e, e</products>
+            <arrh_a unit="cm3.s-1">7.31e-09</arrh_a>
+            <arrh_b>7.36e-01</arrh_b>
+            <arrh_c unit="eV">1.19e+01</arrh_c>
+            <el_en_loss unit="eV">9.25</el_en_loss>
+            <special_number>-2269</special_number>
+            <qdb_r_id>558</qdb_r_id>
+            <qdb_ds_id>550</qdb_ds_id>
+            <doi>10.1063/1.481559</doi>
+        </reaction>
+        <reaction id="35">
+            <reactants>e, N2O</reactants>
+            <products>N2O+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.08e-08</arrh_a>
+            <arrh_b>5.70e-01</arrh_b>
+            <arrh_c unit="eV">1.37e+01</arrh_c>
+            <el_en_loss unit="eV">12.85</el_en_loss>
+            <special_number>-659</special_number>
+            <qdb_r_id>508</qdb_r_id>
+            <qdb_ds_id>500</qdb_ds_id>
+        </reaction>
+        <reaction id="36">
+            <reactants>e, NF3</reactants>
+            <products>NF3+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.47e-09</arrh_a>
+            <arrh_b>6.96e-01</arrh_b>
+            <arrh_c unit="eV">1.28e+01</arrh_c>
+            <el_en_loss unit="eV">13.0</el_en_loss>
+            <special_number>-1156</special_number>
+            <qdb_r_id>574</qdb_r_id>
+            <qdb_ds_id>566</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="37">
+            <reactants>e, NF2</reactants>
+            <products>NF2+, e, e</products>
+            <arrh_a unit="cm3.s-1">1.16e-09</arrh_a>
+            <arrh_b>1.16e+00</arrh_b>
+            <arrh_c unit="eV">1.20e+01</arrh_c>
+            <el_en_loss unit="eV">11.8</el_en_loss>
+            <special_number>-1164</special_number>
+            <qdb_r_id>582</qdb_r_id>
+            <qdb_ds_id>574</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="38">
+            <reactants>e, NF</reactants>
+            <products>NF+, e, e</products>
+            <arrh_a unit="cm3.s-1">2.11e-09</arrh_a>
+            <arrh_b>8.18e-01</arrh_b>
+            <arrh_c unit="eV">1.49e+01</arrh_c>
+            <el_en_loss unit="eV">15.7</el_en_loss>
+            <special_number>-1169</special_number>
+            <qdb_r_id>587</qdb_r_id>
+            <qdb_ds_id>579</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="39">
+            <reactants>e, O2</reactants>
+            <products>O, O+, e, e</products>
+            <arrh_a unit="cm3.s-1">9.92e-10</arrh_a>
+            <arrh_b>1.10e+00</arrh_b>
+            <arrh_c unit="eV">2.03e+01</arrh_c>
+            <el_en_loss unit="eV">16.925</el_en_loss>
+            <special_number>-417</special_number>
+            <qdb_r_id>598</qdb_r_id>
+            <qdb_ds_id>590</qdb_ds_id>
+            <doi>10.1016/0168-1176(92)87037-f</doi>
+        </reaction>
+        <reaction id="40">
+            <reactants>e, NO</reactants>
+            <products>N+, O, e, e</products>
+            <arrh_a unit="cm3.s-1">1.34e-09</arrh_a>
+            <arrh_b>8.63e-01</arrh_b>
+            <arrh_c unit="eV">2.35e+01</arrh_c>
+            <el_en_loss unit="eV">20.95</el_en_loss>
+            <special_number>-2271</special_number>
+            <qdb_r_id>560</qdb_r_id>
+            <qdb_ds_id>552</qdb_ds_id>
+            <doi>10.1063/1.481559</doi>
+        </reaction>
+        <reaction id="41">
+            <reactants>e, NO</reactants>
+            <products>N, O+, e, e</products>
+            <arrh_a unit="cm3.s-1">8.19e-11</arrh_a>
+            <arrh_b>1.47e+00</arrh_b>
+            <arrh_c unit="eV">2.15e+01</arrh_c>
+            <el_en_loss unit="eV">20.075</el_en_loss>
+            <special_number>-2270</special_number>
+            <qdb_r_id>559</qdb_r_id>
+            <qdb_ds_id>551</qdb_ds_id>
+            <doi>10.1063/1.481559</doi>
+        </reaction>
+        <reaction id="42">
+            <reactants>e, N2O</reactants>
+            <products>N2+, O, e, e</products>
+            <arrh_a unit="cm3.s-1">3.14e-09</arrh_a>
+            <arrh_b>5.60e-01</arrh_b>
+            <arrh_c unit="eV">1.99e+01</arrh_c>
+            <el_en_loss unit="eV">17.45</el_en_loss>
+            <special_number>-662</special_number>
+            <qdb_r_id>511</qdb_r_id>
+            <qdb_ds_id>503</qdb_ds_id>
+        </reaction>
+        <reaction id="43">
+            <reactants>N2O, e</reactants>
+            <products>e, N2, O+, e</products>
+            <arrh_a unit="cm3.s-1">8.82e-10</arrh_a>
+            <arrh_b>5.26e-01</arrh_b>
+            <arrh_c unit="eV">1.59e+01</arrh_c>
+            <el_en_loss unit="eV">15.175</el_en_loss>
+            <special_number>-661</special_number>
+            <qdb_r_id>1</qdb_r_id>
+            <qdb_ds_id>502</qdb_ds_id>
+        </reaction>
+        <reaction id="44">
+            <reactants>e, NF3</reactants>
+            <products>NF2+, F, e, e</products>
+            <arrh_a unit="cm3.s-1">1.21e-08</arrh_a>
+            <arrh_b>4.28e-01</arrh_b>
+            <arrh_c unit="eV">1.58e+01</arrh_c>
+            <el_en_loss unit="eV">14.0</el_en_loss>
+            <special_number>-1157</special_number>
+            <qdb_r_id>575</qdb_r_id>
+            <qdb_ds_id>567</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="45">
+            <reactants>e, NF3</reactants>
+            <products>e, e, NF2, F+</products>
+            <arrh_a unit="cm3.s-1">6.92e-10</arrh_a>
+            <arrh_b>7.09e-01</arrh_b>
+            <arrh_c unit="eV">1.67e+01</arrh_c>
+            <el_en_loss unit="eV">15.46</el_en_loss>
+            <qdb_r_id>6108</qdb_r_id>
+            <qdb_ds_id>6034</qdb_ds_id>
+            <doi>10.1088/1361-6595/aa6bdf</doi>
+        </reaction>
+        <reaction id="46">
+            <reactants>e, NF2</reactants>
+            <products>e, e, F, NF+</products>
+            <arrh_a unit="cm3.s-1">4.61e-10</arrh_a>
+            <arrh_b>1.22e+00</arrh_b>
+            <arrh_c unit="eV">1.51e+01</arrh_c>
+            <el_en_loss unit="eV">14.9</el_en_loss>
+            <qdb_r_id>6103</qdb_r_id>
+            <qdb_ds_id>6027</qdb_ds_id>
+            <doi>10.1088/1361-6595/aa6bdf</doi>
+        </reaction>
+        <reaction id="47">
+            <reactants>e, NF2</reactants>
+            <products>e, e, NF, F+</products>
+            <arrh_a unit="cm3.s-1">7.39e-11</arrh_a>
+            <arrh_b>1.23e+00</arrh_b>
+            <arrh_c unit="eV">1.51e+01</arrh_c>
+            <el_en_loss unit="eV">14.9</el_en_loss>
+            <qdb_r_id>6101</qdb_r_id>
+            <qdb_ds_id>6025</qdb_ds_id>
+            <doi>10.1088/1361-6595/aa6bdf</doi>
+        </reaction>
+        <reaction id="48">
+            <reactants>e, NF</reactants>
+            <products>e, e, N, F+</products>
+            <arrh_a unit="cm3.s-1">1.66e-09</arrh_a>
+            <arrh_b>7.39e-01</arrh_b>
+            <arrh_c unit="eV">1.56e+01</arrh_c>
+            <el_en_loss unit="eV">15.2</el_en_loss>
+            <qdb_r_id>6094</qdb_r_id>
+            <qdb_ds_id>6014</qdb_ds_id>
+            <doi>10.1088/1361-6595/aa6bdf</doi>
+        </reaction>
+        <reaction id="49">
+            <reactants>e, NF</reactants>
+            <products>e, e, N+, F</products>
+            <arrh_a unit="cm3.s-1">2.39e-09</arrh_a>
+            <arrh_b>7.39e-01</arrh_b>
+            <arrh_c unit="eV">1.56e+01</arrh_c>
+            <el_en_loss unit="eV">15.2</el_en_loss>
+            <qdb_r_id>6095</qdb_r_id>
+            <qdb_ds_id>6015</qdb_ds_id>
+            <doi>10.1088/1361-6595/aa6bdf</doi>
+        </reaction>
+        <reaction id="50">
+            <reactants>e, O2</reactants>
+            <products>O-, O</products>
+            <arrh_a unit="cm3.s-1">6.74e-10</arrh_a>
+            <arrh_b>-1.02e+00</arrh_b>
+            <arrh_c unit="eV">5.78e+00</arrh_c>
+            <special_number>-401</special_number>
+            <qdb_r_id>4</qdb_r_id>
+            <qdb_ds_id>581</qdb_ds_id>
+        </reaction>
+        <reaction id="51">
+            <reactants>e, F2</reactants>
+            <products>F, F-</products>
+            <arrh_a unit="cm3.s-1">3.82e-09</arrh_a>
+            <arrh_b>-1.16e+00</arrh_b>
+            <arrh_c unit="eV">1.56e-01</arrh_c>
+            <special_number>-925</special_number>
+            <qdb_r_id>1584</qdb_r_id>
+            <qdb_ds_id>1575</qdb_ds_id>
+            <doi>10.1063/1.332797</doi>
+        </reaction>
+        <reaction id="52">
+            <reactants>e, N2O</reactants>
+            <products>O-, N2</products>
+            <arrh_a unit="cm3.s-1">6.92e-10</arrh_a>
+            <arrh_b>-8.88e-01</arrh_b>
+            <arrh_c unit="eV">1.18e+00</arrh_c>
+            <special_number>-655</special_number>
+            <qdb_r_id>507</qdb_r_id>
+            <qdb_ds_id>499</qdb_ds_id>
+        </reaction>
+        <reaction id="53">
+            <reactants>e, NF3</reactants>
+            <products>NF2, F-</products>
+            <arrh_a unit="cm3.s-1">2.08e-08</arrh_a>
+            <arrh_b>-1.23e+00</arrh_b>
+            <arrh_c unit="eV">1.28e+00</arrh_c>
+            <special_number>-1155</special_number>
+            <qdb_r_id>573</qdb_r_id>
+            <qdb_ds_id>565</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="54">
+            <reactants>e, NF2</reactants>
+            <products>NF, F-</products>
+            <arrh_a unit="cm3.s-1">2.09e-08</arrh_a>
+            <arrh_b>-1.23e+00</arrh_b>
+            <arrh_c unit="eV">1.29e+00</arrh_c>
+            <special_number>-1165</special_number>
+            <qdb_r_id>583</qdb_r_id>
+            <qdb_ds_id>575</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="55">
+            <reactants>e, O-</reactants>
+            <products>O, e, e</products>
+            <arrh_a unit="cm3.s-1">1.95e-12</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <arrh_c unit="eV">3.4</arrh_c>
+            <el_en_loss unit="eV">3.4</el_en_loss>
+            <qdb_r_id>2067</qdb_r_id>
+            <qdb_ds_id>2048</qdb_ds_id>
+            <doi>10.1116/1.581096</doi>
+        </reaction>
+        <reaction id="56">
+            <reactants>e, Ar+</reactants>
+            <products>Ar</products>
+            <arrh_a unit="cm3.s-1">4.83e-13</arrh_a>
+            <arrh_b>-5.00e-01</arrh_b>
+            <arrh_c unit="eV">1.28e-02</arrh_c>
+            <special_number>-9</special_number>
+            <qdb_r_id>22</qdb_r_id>
+            <qdb_ds_id>13</qdb_ds_id>
+        </reaction>
+        <reaction id="57">
+            <reactants>e, F+</reactants>
+            <products>F</products>
+            <arrh_a unit="cm3.s-1">4.83e-13</arrh_a>
+            <arrh_b>-5.00e-01</arrh_b>
+            <arrh_c unit="eV">1.28e-02</arrh_c>
+            <special_number>-1034</special_number>
+            <qdb_r_id>369</qdb_r_id>
+            <qdb_ds_id>361</qdb_ds_id>
+        </reaction>
+        <reaction id="58">
+            <reactants>e, O2+</reactants>
+            <products>O, O</products>
+            <arrh_a unit="cm3.s-1">1.53e-08</arrh_a>
+            <arrh_b>-5.05e-01</arrh_b>
+            <arrh_c unit="eV">1.32e-02</arrh_c>
+            <special_number>-2259</special_number>
+            <qdb_r_id>600</qdb_r_id>
+            <qdb_ds_id>592</qdb_ds_id>
+            <doi>10.1016/0370-1573(90)90159-y</doi>
+        </reaction>
+        <reaction id="59">
+            <reactants>e, F2+</reactants>
+            <products>F, F</products>
+            <arrh_a unit="cm3.s-1">2.26e-07</arrh_a>
+            <arrh_b>-5.00e-01</arrh_b>
+            <arrh_c unit="eV">1.28e-02</arrh_c>
+            <special_number>-933</special_number>
+            <qdb_r_id>355</qdb_r_id>
+            <qdb_ds_id>347</qdb_ds_id>
+            <doi>10.1088/0022-3727/15/11/014</doi>
+        </reaction>
+        <reaction id="60">
+            <reactants>NO+, e</reactants>
+            <products>N, O</products>
+            <arrh_a unit="cm3.s-1">1.71e-08</arrh_a>
+            <arrh_b>-5.10e-01</arrh_b>
+            <arrh_c unit="eV">4.39e-03</arrh_c>
+            <qdb_r_id>1240</qdb_r_id>
+            <qdb_ds_id>2774</qdb_ds_id>
+            <doi>10.1016/0370-1573(90)90159-y</doi>
+        </reaction>
+        <reaction id="61">
+            <reactants>e, NF3+</reactants>
+            <products>NF2, F</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>6040</qdb_r_id>
+            <qdb_ds_id>5936</qdb_ds_id>
+            <doi>10.1063/1.334477</doi>
+        </reaction>
+        <reaction id="62">
+            <reactants>e, NF2+</reactants>
+            <products>NF, F</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>6041</qdb_r_id>
+            <qdb_ds_id>5937</qdb_ds_id>
+            <doi>10.1063/1.334477</doi>
+        </reaction>
+        <reaction id="63">
+            <reactants>e, NF+</reactants>
+            <products>N, F</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>6042</qdb_r_id>
+            <qdb_ds_id>5938</qdb_ds_id>
+            <doi>10.1063/1.334477</doi>
+        </reaction>
+        <reaction id="64">
+            <reactants>e, O2</reactants>
+            <products>e, O, O</products>
+            <arrh_a unit="cm3.s-1">1.75e-08</arrh_a>
+            <arrh_b>-1.28e+00</arrh_b>
+            <arrh_c unit="eV">7.38e+00</arrh_c>
+            <el_en_loss unit="eV">4.5</el_en_loss>
+            <special_number>-411</special_number>
+            <qdb_r_id>592</qdb_r_id>
+            <qdb_ds_id>584</qdb_ds_id>
+        </reaction>
+        <reaction id="65">
+            <reactants>e, N2O</reactants>
+            <products>N2, O, e</products>
+            <arrh_a unit="cm3.s-1">1.4e-09</arrh_a>
+            <arrh_c unit="eV">1.67</arrh_c>
+            <el_en_loss unit="eV">1.67</el_en_loss>
+            <qdb_r_id>13729</qdb_r_id>
+            <qdb_ds_id>13665</qdb_ds_id>
+        </reaction>
+        <reaction id="66">
+            <reactants>e, NF3</reactants>
+            <products>NF, F, F, e</products>
+            <arrh_a unit="cm3.s-1">9.68e-09</arrh_a>
+            <arrh_b>5.26e-01</arrh_b>
+            <arrh_c unit="eV">1.06e+01</arrh_c>
+            <el_en_loss unit="eV">8.9</el_en_loss>
+            <special_number>-1154</special_number>
+            <qdb_r_id>572</qdb_r_id>
+            <qdb_ds_id>564</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="67">
+            <reactants>e, NF3</reactants>
+            <products>NF2, F, e</products>
+            <arrh_a unit="cm3.s-1">7.06e-08</arrh_a>
+            <arrh_b>-3.68e-01</arrh_b>
+            <arrh_c unit="eV">5.41e+00</arrh_c>
+            <el_en_loss unit="eV">5.6</el_en_loss>
+            <special_number>-1153</special_number>
+            <qdb_r_id>571</qdb_r_id>
+            <qdb_ds_id>563</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="68">
+            <reactants>e, NF2</reactants>
+            <products>NF, F, e</products>
+            <arrh_a unit="cm3.s-1">3.97e-08</arrh_a>
+            <arrh_b>-1.62e-01</arrh_b>
+            <arrh_c unit="eV">7.48e+00</arrh_c>
+            <el_en_loss unit="eV">5.6</el_en_loss>
+            <special_number>-1162</special_number>
+            <qdb_r_id>580</qdb_r_id>
+            <qdb_ds_id>572</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="69">
+            <reactants>e, NF</reactants>
+            <products>N, F, e</products>
+            <arrh_a unit="cm3.s-1">3.97e-08</arrh_a>
+            <arrh_b>-1.62e-01</arrh_b>
+            <arrh_c unit="eV">7.48e+00</arrh_c>
+            <el_en_loss unit="eV">5.6</el_en_loss>
+            <special_number>-1168</special_number>
+            <qdb_r_id>586</qdb_r_id>
+            <qdb_ds_id>578</qdb_ds_id>
+            <doi>10.1149/1.1837410</doi>
+        </reaction>
+        <reaction id="70">
+            <reactants>O2, M</reactants>
+            <products>O, O, M</products>
+            <arrh_a unit="cm3.s-1">1.31e-10</arrh_a>
+            <arrh_c unit="K">52740.0</arrh_c>
+            <qdb_r_id>6380</qdb_r_id>
+            <qdb_ds_id>6309</qdb_ds_id>
+        </reaction>
+        <reaction id="71">
+            <reactants>O3, M</reactants>
+            <products>O2, O, M</products>
+            <arrh_a unit="cm3.s-1">1.56e-09</arrh_a>
+            <arrh_c unit="K">11490.0</arrh_c>
+            <qdb_r_id>3668</qdb_r_id>
+            <qdb_ds_id>3728</qdb_ds_id>
+            <doi>10.1063/1.1768615</doi>
+        </reaction>
+        <reaction id="72">
+            <reactants>N2, M</reactants>
+            <products>N, N, M</products>
+            <arrh_a unit="cm3.s-1">9.86e-05</arrh_a>
+            <arrh_b>-3.33</arrh_b>
+            <arrh_c unit="K">113220.0</arrh_c>
+            <qdb_r_id>6368</qdb_r_id>
+            <qdb_ds_id>6297</qdb_ds_id>
+            <doi>10.2514/3.9398</doi>
+        </reaction>
+        <reaction id="73">
+            <reactants>N2*, M</reactants>
+            <products>N*, N, M</products>
+            <arrh_a unit="cm3.s-1">9.86e-05</arrh_a>
+            <arrh_b>-3.33</arrh_b>
+            <arrh_c unit="K">69163.0</arrh_c>
+            <qdb_r_id>6371</qdb_r_id>
+            <qdb_ds_id>6300</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="74">
+            <reactants>F2, M</reactants>
+            <products>F, F, M</products>
+            <arrh_a unit="cm3.s-1">7.6e-12</arrh_a>
+            <arrh_c unit="K">14300.0</arrh_c>
+            <qdb_r_id>6364</qdb_r_id>
+            <qdb_ds_id>6293</qdb_ds_id>
+            <doi>10.1002/kin.550030105</doi>
+        </reaction>
+        <reaction id="75">
+            <reactants>NO, M</reactants>
+            <products>N, O, M</products>
+            <arrh_a unit="cm3.s-1">2.28e-10</arrh_a>
+            <arrh_c unit="K">74680.0</arrh_c>
+            <qdb_r_id>6377</qdb_r_id>
+            <qdb_ds_id>6306</qdb_ds_id>
+        </reaction>
+        <reaction id="76">
+            <reactants>N2O, M</reactants>
+            <products>N2, O, M</products>
+            <arrh_a unit="cm3.s-1">2.36e-10</arrh_a>
+            <arrh_c unit="K">25810.0</arrh_c>
+            <qdb_r_id>6379</qdb_r_id>
+            <qdb_ds_id>6308</qdb_ds_id>
+        </reaction>
+        <reaction id="77">
+            <reactants>NO2, M</reactants>
+            <products>NO, O, M</products>
+            <arrh_a unit="cm3.s-1">0.000188</arrh_a>
+            <arrh_b>-3.37</arrh_b>
+            <arrh_c unit="K">37640.0</arrh_c>
+            <qdb_r_id>6378</qdb_r_id>
+            <qdb_ds_id>6307</qdb_ds_id>
+            <doi>10.1063/1.555890</doi>
+        </reaction>
+        <reaction id="78">
+            <reactants>FO, M</reactants>
+            <products>F, O, M</products>
+            <arrh_a unit="cm3.s-1">1.31e-10</arrh_a>
+            <arrh_c unit="K">52740.0</arrh_c>
+            <qdb_r_id>6366</qdb_r_id>
+            <qdb_ds_id>6295</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="79">
+            <reactants>NF3, M</reactants>
+            <products>NF2, F, M</products>
+            <arrh_a unit="cm3.s-1">3.98e-10</arrh_a>
+            <arrh_c unit="K">18417.0</arrh_c>
+            <qdb_r_id>6374</qdb_r_id>
+            <qdb_ds_id>6303</qdb_ds_id>
+            <doi>10.1016/0009-2614(92)85664-V</doi>
+        </reaction>
+        <reaction id="80">
+            <reactants>NF2, M</reactants>
+            <products>NF, F, M</products>
+            <arrh_a unit="cm3.s-1">1.26e-09</arrh_a>
+            <arrh_c unit="K">25700.0</arrh_c>
+            <qdb_r_id>6375</qdb_r_id>
+            <qdb_ds_id>6304</qdb_ds_id>
+        </reaction>
+        <reaction id="81">
+            <reactants>NF, M</reactants>
+            <products>N, F, M</products>
+            <arrh_a unit="cm3.s-1">1.31e-10</arrh_a>
+            <arrh_c unit="K">52740.0</arrh_c>
+            <qdb_r_id>6376</qdb_r_id>
+            <qdb_ds_id>6305</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="82">
+            <reactants>FNO, M</reactants>
+            <products>F, NO, M</products>
+            <arrh_a unit="cm3.s-1">1.31e-10</arrh_a>
+            <arrh_c unit="K">53899.0</arrh_c>
+            <qdb_r_id>6367</qdb_r_id>
+            <qdb_ds_id>6296</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="83">
+            <reactants>O, O3</reactants>
+            <products>O2*, O2</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <arrh_c unit="K">2300.0</arrh_c>
+            <qdb_r_id>6294</qdb_r_id>
+            <qdb_ds_id>6223</qdb_ds_id>
+        </reaction>
+        <reaction id="84">
+            <reactants>O*, Ar</reactants>
+            <products>O, Ar</products>
+            <arrh_a unit="cm3.s-1">5e-13</arrh_a>
+            <qdb_r_id>2075</qdb_r_id>
+            <qdb_ds_id>2056</qdb_ds_id>
+        </reaction>
+        <reaction id="85">
+            <reactants>O*, O3</reactants>
+            <products>O2, O2</products>
+            <arrh_a unit="cm3.s-1">1.2e-10</arrh_a>
+            <qdb_r_id>6295</qdb_r_id>
+            <qdb_ds_id>6224</qdb_ds_id>
+            <doi>10.1063/1.556011</doi>
+        </reaction>
+        <reaction id="86">
+            <reactants>NO, O*</reactants>
+            <products>O2, N</products>
+            <arrh_a unit="cm3.s-1">1.5e-10</arrh_a>
+            <qdb_r_id>6331</qdb_r_id>
+            <qdb_ds_id>6260</qdb_ds_id>
+            <doi>10.1063/1.1669957</doi>
+        </reaction>
+        <reaction id="87">
+            <reactants>O*, N2O</reactants>
+            <products>N2, O2</products>
+            <arrh_a unit="cm3.s-1">4.4e-11</arrh_a>
+            <qdb_r_id>1060</qdb_r_id>
+            <qdb_ds_id>1052</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="88">
+            <reactants>O*, N2O</reactants>
+            <products>NO, NO</products>
+            <arrh_a unit="cm3.s-1">7.2e-11</arrh_a>
+            <qdb_r_id>1059</qdb_r_id>
+            <qdb_ds_id>1051</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="89">
+            <reactants>O*, FO</reactants>
+            <products>O2, F</products>
+            <arrh_a unit="cm3.s-1">5e-11</arrh_a>
+            <qdb_r_id>1851</qdb_r_id>
+            <qdb_ds_id>1820</qdb_ds_id>
+            <doi>10.1088/0963-0252/21/5/055028</doi>
+        </reaction>
+        <reaction id="90">
+            <reactants>NF3, O*</reactants>
+            <products>NF2, FO</products>
+            <arrh_a unit="cm3.s-1">1.1e-11</arrh_a>
+            <qdb_r_id>6357</qdb_r_id>
+            <qdb_ds_id>6286</qdb_ds_id>
+            <doi>10.1063/1.476346</doi>
+        </reaction>
+        <reaction id="91">
+            <reactants>O2, O2*</reactants>
+            <products>O, O3</products>
+            <arrh_a unit="cm3.s-1">2.95e-21</arrh_a>
+            <qdb_r_id>6292</qdb_r_id>
+            <qdb_ds_id>6221</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="92">
+            <reactants>N*, O2</reactants>
+            <products>NO, O</products>
+            <arrh_a unit="cm3.s-1">1.22e-11</arrh_a>
+            <arrh_c unit="K">317.0</arrh_c>
+            <qdb_r_id>6316</qdb_r_id>
+            <qdb_ds_id>6245</qdb_ds_id>
+            <doi>10.1016/S0009-2614(00)01468-8</doi>
+        </reaction>
+        <reaction id="93">
+            <reactants>N2*, O2</reactants>
+            <products>N2O, O</products>
+            <arrh_a unit="cm3.s-1">7.8e-14</arrh_a>
+            <qdb_r_id>6308</qdb_r_id>
+            <qdb_ds_id>6237</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="94">
+            <reactants>N, O2*</reactants>
+            <products>NO, O</products>
+            <arrh_a unit="cm3.s-1">2e-14</arrh_a>
+            <arrh_c unit="K">600.0</arrh_c>
+            <qdb_r_id>6313</qdb_r_id>
+            <qdb_ds_id>6242</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="95">
+            <reactants>N*, O2*</reactants>
+            <products>NO, O</products>
+            <arrh_a unit="cm3.s-1">2e-14</arrh_a>
+            <qdb_r_id>6320</qdb_r_id>
+            <qdb_ds_id>6249</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="96">
+            <reactants>N*, O3</reactants>
+            <products>NO, O2</products>
+            <arrh_a unit="cm3.s-1">1e-10</arrh_a>
+            <qdb_r_id>6322</qdb_r_id>
+            <qdb_ds_id>6251</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="97">
+            <reactants>N*, NO</reactants>
+            <products>N2, O</products>
+            <arrh_a unit="cm3.s-1">6.3e-11</arrh_a>
+            <qdb_r_id>6330</qdb_r_id>
+            <qdb_ds_id>6259</qdb_ds_id>
+            <doi>10.1016/1359-0197(88)90103-8</doi>
+        </reaction>
+        <reaction id="98">
+            <reactants>N2O, N*</reactants>
+            <products>N2, NO</products>
+            <arrh_a unit="cm3.s-1">1.5e-11</arrh_a>
+            <arrh_c unit="K">570.0</arrh_c>
+            <qdb_r_id>6338</qdb_r_id>
+            <qdb_ds_id>6267</qdb_ds_id>
+        </reaction>
+        <reaction id="99">
+            <reactants>N*, NO2</reactants>
+            <products>N2O, O</products>
+            <arrh_a unit="cm3.s-1">1.5e-12</arrh_a>
+            <arrh_c unit="K">570.0</arrh_c>
+            <qdb_r_id>6329</qdb_r_id>
+            <qdb_ds_id>6258</qdb_ds_id>
+        </reaction>
+        <reaction id="100">
+            <reactants>N*, NO2</reactants>
+            <products>N2, O2</products>
+            <arrh_a unit="cm3.s-1">1.41e-12</arrh_a>
+            <qdb_r_id>6328</qdb_r_id>
+            <qdb_ds_id>6257</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="101">
+            <reactants>N*, NO2</reactants>
+            <products>NO, NO</products>
+            <arrh_a unit="cm3.s-1">1.5e-12</arrh_a>
+            <qdb_r_id>6326</qdb_r_id>
+            <qdb_ds_id>6255</qdb_ds_id>
+            <doi>10.1016/1359-0197(88)90103-8</doi>
+        </reaction>
+        <reaction id="102">
+            <reactants>NF3, N*</reactants>
+            <products>NF, NF2</products>
+            <arrh_a unit="cm3.s-1">2.13e-12</arrh_a>
+            <qdb_r_id>6349</qdb_r_id>
+            <qdb_ds_id>6278</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="103">
+            <reactants>NF2, N*</reactants>
+            <products>NF, NF</products>
+            <arrh_a unit="cm3.s-1">3e-12</arrh_a>
+            <qdb_r_id>6350</qdb_r_id>
+            <qdb_ds_id>6279</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="104">
+            <reactants>NF, N*</reactants>
+            <products>N2, F</products>
+            <arrh_a unit="cm3.s-1">2.5e-10</arrh_a>
+            <qdb_r_id>6352</qdb_r_id>
+            <qdb_ds_id>6281</qdb_ds_id>
+            <doi>10.1063/1.556043</doi>
+        </reaction>
+        <reaction id="105">
+            <reactants>O2*, M</reactants>
+            <products>O, O, M</products>
+            <arrh_a unit="cm3.s-1">1.31e-10</arrh_a>
+            <arrh_c unit="K">41146.0</arrh_c>
+            <qdb_r_id>6382</qdb_r_id>
+            <qdb_ds_id>6311</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="106">
+            <reactants>N2*, M</reactants>
+            <products>N, N, M</products>
+            <arrh_a unit="cm3.s-1">9.86e-05</arrh_a>
+            <arrh_b>-3.33</arrh_b>
+            <arrh_c unit="K">41337.0</arrh_c>
+            <qdb_r_id>6370</qdb_r_id>
+            <qdb_ds_id>6299</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="107">
+            <reactants>Ar*, O</reactants>
+            <products>O*, Ar</products>
+            <arrh_a unit="cm3.s-1">4.1e-11</arrh_a>
+            <qdb_r_id>2074</qdb_r_id>
+            <qdb_ds_id>2055</qdb_ds_id>
+            <doi>10.1039/f29777300177</doi>
+        </reaction>
+        <reaction id="108">
+            <reactants>Ar*, Ar*</reactants>
+            <products>Ar+, Ar, e</products>
+            <arrh_a unit="cm3.s-1">1e-10</arrh_a>
+            <qdb_r_id>44</qdb_r_id>
+            <qdb_ds_id>35</qdb_ds_id>
+            <doi>10.1063/1.341762</doi>
+        </reaction>
+        <reaction id="109">
+            <reactants>Ar*, Ar**</reactants>
+            <products>Ar+, Ar, e</products>
+            <arrh_a unit="cm3.s-1">1.2e-9</arrh_a>
+            <arrh_b>0.5</arrh_b>
+            <qdb_r_id>46</qdb_r_id>
+            <qdb_ds_id>37</qdb_ds_id>
+        </reaction>
+        <reaction id="110">
+            <reactants>Ar*, O2*</reactants>
+            <products>O2+, Ar, e</products>
+            <arrh_a unit="cm3.s-1">1.2e-09</arrh_a>
+            <arrh_b>0.5</arrh_b>
+            <qdb_r_id>6123</qdb_r_id>
+            <qdb_ds_id>6051</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="111">
+            <reactants>Ar**, Ar**</reactants>
+            <products>Ar+, Ar, e</products>
+            <arrh_a unit="cm3.s-1">5.e-10</arrh_a>
+            <qdb_r_id>47</qdb_r_id>
+            <qdb_ds_id>38</qdb_ds_id>
+            <doi>10.1063/1.341762</doi>
+        </reaction>
+        <reaction id="112">
+            <reactants>O, O3</reactants>
+            <products>O2, O2</products>
+            <arrh_a unit="cm3.s-1">8e-12</arrh_a>
+            <arrh_c unit="K">2060.0</arrh_c>
+            <qdb_r_id>987</qdb_r_id>
+            <qdb_ds_id>979</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="113">
+            <reactants>N2, O</reactants>
+            <products>N, NO</products>
+            <arrh_a unit="cm3.s-1">1.26e-10</arrh_a>
+            <arrh_c unit="K">38040.0</arrh_c>
+            <qdb_r_id>6302</qdb_r_id>
+            <qdb_ds_id>6231</qdb_ds_id>
+        </reaction>
+        <reaction id="114">
+            <reactants>F2, O</reactants>
+            <products>F, FO</products>
+            <arrh_a unit="cm3.s-1">1.62e-11</arrh_a>
+            <arrh_c unit="K">5233.0</arrh_c>
+            <qdb_r_id>6343</qdb_r_id>
+            <qdb_ds_id>6272</qdb_ds_id>
+        </reaction>
+        <reaction id="115">
+            <reactants>NO, O</reactants>
+            <products>N, O2</products>
+            <arrh_a unit="cm3.s-1">7.48e-13</arrh_a>
+            <arrh_b>1.0</arrh_b>
+            <arrh_c unit="K">19500.0</arrh_c>
+            <qdb_r_id>6332</qdb_r_id>
+            <qdb_ds_id>6261</qdb_ds_id>
+        </reaction>
+        <reaction id="116">
+            <reactants>N2O, O</reactants>
+            <products>N2, O2</products>
+            <arrh_a unit="cm3.s-1">1.66e-10</arrh_a>
+            <arrh_c unit="K">14100.0</arrh_c>
+            <qdb_r_id>6339</qdb_r_id>
+            <qdb_ds_id>6268</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="117">
+            <reactants>N2O, O</reactants>
+            <products>NO, NO</products>
+            <arrh_a unit="cm3.s-1">1.15e-10</arrh_a>
+            <arrh_c unit="K">13400.0</arrh_c>
+            <qdb_r_id>6340</qdb_r_id>
+            <qdb_ds_id>6269</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="118">
+            <reactants>FO, O</reactants>
+            <products>O2, F</products>
+            <arrh_a unit="cm3.s-1">2.7e-11</arrh_a>
+            <qdb_r_id>1829</qdb_r_id>
+            <qdb_ds_id>1798</qdb_ds_id>
+            <doi>10.1088/0963-0252/21/5/055028</doi>
+        </reaction>
+        <reaction id="119">
+            <reactants>NF2, O</reactants>
+            <products>F, FNO</products>
+            <arrh_a unit="cm3.s-1">1.25e-11</arrh_a>
+            <qdb_r_id>6359</qdb_r_id>
+            <qdb_ds_id>6288</qdb_ds_id>
+            <doi>10.1039/F29807600711</doi>
+        </reaction>
+        <reaction id="120">
+            <reactants>NF2, O</reactants>
+            <products>NF, FO</products>
+            <arrh_a unit="cm3.s-1">1.79e-12</arrh_a>
+            <qdb_r_id>6358</qdb_r_id>
+            <qdb_ds_id>6287</qdb_ds_id>
+            <doi>10.1039/F29807600711</doi>
+        </reaction>
+        <reaction id="121">
+            <reactants>FNO, O</reactants>
+            <products>F, NO2</products>
+            <arrh_a unit="cm3.s-1">3e-13</arrh_a>
+            <qdb_r_id>6363</qdb_r_id>
+            <qdb_ds_id>6292</qdb_ds_id>
+        </reaction>
+        <reaction id="122">
+            <reactants>O2, O2</reactants>
+            <products>O3, O</products>
+            <arrh_a unit="cm3.s-1">1.11e-11</arrh_a>
+            <arrh_c unit="K">49800.0</arrh_c>
+            <qdb_r_id>6289</qdb_r_id>
+            <qdb_ds_id>6218</qdb_ds_id>
+            <doi>10.1063/1.1743610</doi>
+        </reaction>
+        <reaction id="123">
+            <reactants>N, O2</reactants>
+            <products>NO, O</products>
+            <arrh_a unit="cm3.s-1">1.5e-11</arrh_a>
+            <arrh_c unit="K">3600.0</arrh_c>
+            <qdb_r_id>996</qdb_r_id>
+            <qdb_ds_id>988</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="124">
+            <reactants>N2, O2</reactants>
+            <products>N2O, O</products>
+            <arrh_a unit="cm3.s-1">1e-10</arrh_a>
+            <arrh_c unit="K">55200.0</arrh_c>
+            <qdb_r_id>6304</qdb_r_id>
+            <qdb_ds_id>6233</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="125">
+            <reactants>N2, O2</reactants>
+            <products>NO, NO</products>
+            <arrh_a unit="cm3.s-1">9.85e-06</arrh_a>
+            <arrh_c unit="K">64660.0</arrh_c>
+            <qdb_r_id>6298</qdb_r_id>
+            <qdb_ds_id>6227</qdb_ds_id>
+        </reaction>
+        <reaction id="126">
+            <reactants>N, O3</reactants>
+            <products>NO, O2</products>
+            <arrh_a unit="cm3.s-1">5e-16</arrh_a>
+            <qdb_r_id>6315</qdb_r_id>
+            <qdb_ds_id>6244</qdb_ds_id>
+            <doi>10.1063/1.437317</doi>
+        </reaction>
+        <reaction id="127">
+            <reactants>F, O3</reactants>
+            <products>FO, O2</products>
+            <arrh_a unit="cm3.s-1">2.82e-11</arrh_a>
+            <arrh_c unit="K">252.0</arrh_c>
+            <qdb_r_id>6344</qdb_r_id>
+            <qdb_ds_id>6273</qdb_ds_id>
+        </reaction>
+        <reaction id="128">
+            <reactants>NO, O3</reactants>
+            <products>NO2, O2</products>
+            <arrh_a unit="cm3.s-1">1.8e-12</arrh_a>
+            <arrh_c unit="K">1370.0</arrh_c>
+            <qdb_r_id>1010</qdb_r_id>
+            <qdb_ds_id>1002</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="129">
+            <reactants>N, NO</reactants>
+            <products>N2, O</products>
+            <arrh_a unit="cm3.s-1">2.1e-11</arrh_a>
+            <arrh_c unit="K">-100.0</arrh_c>
+            <qdb_r_id>998</qdb_r_id>
+            <qdb_ds_id>990</qdb_ds_id>
+            <doi>10.1023/a:1011082611822</doi>
+        </reaction>
+        <reaction id="130">
+            <reactants>NF3, N</reactants>
+            <products>NF, NF2</products>
+            <arrh_a unit="cm3.s-1">2.13e-12</arrh_a>
+            <arrh_b>1.97</arrh_b>
+            <arrh_c unit="K">15120.0</arrh_c>
+            <qdb_r_id>6346</qdb_r_id>
+            <qdb_ds_id>6275</qdb_ds_id>
+            <doi>10.1016/j.theochem.2006.05.032</doi>
+        </reaction>
+        <reaction id="131">
+            <reactants>FO, F</reactants>
+            <products>F2, O</products>
+            <arrh_a unit="cm3.s-1">6.61e-14</arrh_a>
+            <arrh_c unit="K">9561.0</arrh_c>
+            <qdb_r_id>6345</qdb_r_id>
+            <qdb_ds_id>6274</qdb_ds_id>
+        </reaction>
+        <reaction id="132">
+            <reactants>F2, NO</reactants>
+            <products>F, FNO</products>
+            <arrh_a unit="cm3.s-1">1.2e-14</arrh_a>
+            <qdb_r_id>6361</qdb_r_id>
+            <qdb_ds_id>6290</qdb_ds_id>
+        </reaction>
+        <reaction id="133">
+            <reactants>NF2, F2</reactants>
+            <products>F, NF3</products>
+            <arrh_a unit="cm3.s-1">3e-14</arrh_a>
+            <arrh_c unit="K">4860.0</arrh_c>
+            <qdb_r_id>6356</qdb_r_id>
+            <qdb_ds_id>6285</qdb_ds_id>
+        </reaction>
+        <reaction id="134">
+            <reactants>NO, NO</reactants>
+            <products>N2O, O</products>
+            <arrh_a unit="cm3.s-1">7.22e-12</arrh_a>
+            <arrh_c unit="K">33155.0</arrh_c>
+            <qdb_r_id>6334</qdb_r_id>
+            <qdb_ds_id>6263</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="135">
+            <reactants>NO, NO</reactants>
+            <products>N2, O2</products>
+            <arrh_a unit="cm3.s-1">1.35e-11</arrh_a>
+            <arrh_c unit="K">28680.0</arrh_c>
+            <qdb_r_id>6333</qdb_r_id>
+            <qdb_ds_id>6262</qdb_ds_id>
+        </reaction>
+        <reaction id="136">
+            <reactants>N2O, NO</reactants>
+            <products>NO2, N2</products>
+            <arrh_a unit="cm3.s-1">2.92e-13</arrh_a>
+            <arrh_b>2.23</arrh_b>
+            <arrh_c unit="K">23292.0</arrh_c>
+            <qdb_r_id>6342</qdb_r_id>
+            <qdb_ds_id>6271</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="137">
+            <reactants>NF3, NF</reactants>
+            <products>NF2, NF2</products>
+            <arrh_a unit="cm3.s-1">1e-14</arrh_a>
+            <qdb_r_id>6353</qdb_r_id>
+            <qdb_ds_id>6282</qdb_ds_id>
+            <doi>10.1021/j100202a049</doi>
+        </reaction>
+        <reaction id="138">
+            <reactants>NF2, NF2</reactants>
+            <products>NF, NF3</products>
+            <arrh_a unit="cm3.s-1">1.66e-12</arrh_a>
+            <arrh_c unit="K">18600.0</arrh_c>
+            <qdb_r_id>6354</qdb_r_id>
+            <qdb_ds_id>6283</qdb_ds_id>
+            <doi>10.1002/kin.550070505</doi>
+        </reaction>
+        <reaction id="139">
+            <reactants>NF, NF</reactants>
+            <products>F2, N2</products>
+            <arrh_a unit="cm3.s-1">4e-12</arrh_a>
+            <qdb_r_id>6075</qdb_r_id>
+            <qdb_ds_id>5971</qdb_ds_id>
+            <doi>10.1021/j100202a049</doi>
+        </reaction>
+        <reaction id="140">
+            <reactants>Ar*, O2</reactants>
+            <products>Ar, O*, O</products>
+            <arrh_a unit="cm3.s-1">2.1e-10</arrh_a>
+            <qdb_r_id>2379</qdb_r_id>
+            <qdb_ds_id>2392</qdb_ds_id>
+            <doi>10.1063/1.366111</doi>
+        </reaction>
+        <reaction id="141">
+            <reactants>O*, O3</reactants>
+            <products>O2, O, O</products>
+            <arrh_a unit="cm3.s-1">1.2e-10</arrh_a>
+            <qdb_r_id>6296</qdb_r_id>
+            <qdb_ds_id>6225</qdb_ds_id>
+            <doi>10.1063/1.556011</doi>
+        </reaction>
+        <reaction id="142">
+            <reactants>N2O, O*</reactants>
+            <products>N2, O2*</products>
+            <arrh_a unit="cm3.s-1">2.43e-12</arrh_a>
+            <arrh_b>2.3</arrh_b>
+            <arrh_c unit="K">9645.0</arrh_c>
+            <qdb_r_id>6341</qdb_r_id>
+            <qdb_ds_id>6270</qdb_ds_id>
+            <doi>10.1016/S0009-2614(02)00195-1</doi>
+        </reaction>
+        <reaction id="143">
+            <reactants>N*, O2</reactants>
+            <products>NO, O*</products>
+            <arrh_a unit="cm3.s-1">6e-12</arrh_a>
+            <arrh_b>0.5</arrh_b>
+            <qdb_r_id>6317</qdb_r_id>
+            <qdb_ds_id>6246</qdb_ds_id>
+        </reaction>
+        <reaction id="144">
+            <reactants>N2*, O2</reactants>
+            <products>N2O, O*</products>
+            <arrh_a unit="cm3.s-1">3e-14</arrh_a>
+            <qdb_r_id>6309</qdb_r_id>
+            <qdb_ds_id>6238</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="145">
+            <reactants>O3, O3</reactants>
+            <products>O2, O2, O2</products>
+            <arrh_a unit="cm3.s-1">7.42e-12</arrh_a>
+            <arrh_c unit="K">9460.0</arrh_c>
+            <qdb_r_id>6297</qdb_r_id>
+            <qdb_ds_id>6226</qdb_ds_id>
+        </reaction>
+        <reaction id="146">
+            <reactants>NF2, N</reactants>
+            <products>N2, F, F</products>
+            <arrh_a unit="cm3.s-1">1.4e-11</arrh_a>
+            <arrh_c unit="K">95.0</arrh_c>
+            <qdb_r_id>6347</qdb_r_id>
+            <qdb_ds_id>6276</qdb_ds_id>
+        </reaction>
+        <reaction id="147">
+            <reactants>N*, NO2</reactants>
+            <products>N2, O, O</products>
+            <arrh_a unit="cm3.s-1">1.12e-12</arrh_a>
+            <qdb_r_id>6327</qdb_r_id>
+            <qdb_ds_id>6256</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="148">
+            <reactants>NF2, N*</reactants>
+            <products>N2, F, F</products>
+            <arrh_a unit="cm3.s-1">1.4e-11</arrh_a>
+            <qdb_r_id>6351</qdb_r_id>
+            <qdb_ds_id>6280</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="149">
+            <reactants>N2O, N2*</reactants>
+            <products>NO, N, N2</products>
+            <arrh_a unit="cm3.s-1">8e-11</arrh_a>
+            <qdb_r_id>6337</qdb_r_id>
+            <qdb_ds_id>6266</qdb_ds_id>
+        </reaction>
+        <reaction id="150">
+            <reactants>NF2, FO</reactants>
+            <products>FNO, F, F</products>
+            <arrh_a unit="cm3.s-1">3.8e-12</arrh_a>
+            <qdb_r_id>6360</qdb_r_id>
+            <qdb_ds_id>6289</qdb_ds_id>
+        </reaction>
+        <reaction id="151">
+            <reactants>NF, NF</reactants>
+            <products>N2, F, F</products>
+            <arrh_a unit="cm3.s-1">6.88e-11</arrh_a>
+            <arrh_c unit="K">1251.0</arrh_c>
+            <qdb_r_id>6355</qdb_r_id>
+            <qdb_ds_id>6284</qdb_ds_id>
+        </reaction>
+        <reaction id="152">
+            <reactants>Ar, Ar+</reactants>
+            <products>Ar, Ar+</products>
+            <arrh_a unit="cm3.s-1">5.66E-10</arrh_a>
+            <arrh_b>0.5</arrh_b>
+            <qdb_r_id>10</qdb_r_id>
+            <qdb_ds_id>1</qdb_ds_id>
+        </reaction>
+        <reaction id="153">
+            <reactants>O, O+</reactants>
+            <products>O+, O</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>2162</qdb_r_id>
+            <qdb_ds_id>2143</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="154">
+            <reactants>O2+, O2</reactants>
+            <products>O2, O2+</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>2170</qdb_r_id>
+            <qdb_ds_id>2151</qdb_ds_id>
+            <doi>10.1063/1.341762</doi>
+        </reaction>
+        <reaction id="155">
+            <reactants>N+, N</reactants>
+            <products>N+, N</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>1467</qdb_r_id>
+            <qdb_ds_id>1459</qdb_ds_id>
+        </reaction>
+        <reaction id="156">
+            <reactants>N2+, N2</reactants>
+            <products>N2+, N2</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>1465</qdb_r_id>
+            <qdb_ds_id>1457</qdb_ds_id>
+        </reaction>
+        <reaction id="157">
+            <reactants>F+, F</reactants>
+            <products>F+, F</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>2139</qdb_r_id>
+            <qdb_ds_id>2120</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="158">
+            <reactants>F2+, F2</reactants>
+            <products>F2+, F2</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>2144</qdb_r_id>
+            <qdb_ds_id>2125</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="159">
+            <reactants>NO+, NO</reactants>
+            <products>NO, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>6230</qdb_r_id>
+            <qdb_ds_id>6158</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="160">
+            <reactants>N2O+, N2O</reactants>
+            <products>N2O, N2O+</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>6205</qdb_r_id>
+            <qdb_ds_id>6133</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="161">
+            <reactants>NF3+, NF3</reactants>
+            <products>NF3, NF3+</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>6197</qdb_r_id>
+            <qdb_ds_id>6125</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="162">
+            <reactants>NF2+, NF2</reactants>
+            <products>NF2, NF2+</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>6227</qdb_r_id>
+            <qdb_ds_id>6155</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="163">
+            <reactants>NF+, NF</reactants>
+            <products>NF, NF+</products>
+            <arrh_a unit="cm3.s-1">1e-09</arrh_a>
+            <qdb_r_id>6215</qdb_r_id>
+            <qdb_ds_id>6143</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="164">
+            <reactants>Ar, O+</reactants>
+            <products>O, Ar+</products>
+            <arrh_a unit="cm3.s-1">2.1e-11</arrh_a>
+            <qdb_r_id>1164</qdb_r_id>
+            <qdb_ds_id>1156</qdb_ds_id>
+            <doi>10.1016/j.sab.2009.10.003</doi>
+        </reaction>
+        <reaction id="165">
+            <reactants>Ar, O2+</reactants>
+            <products>O2, Ar+</products>
+            <arrh_a unit="cm3.s-1">2.1e-11</arrh_a>
+            <qdb_r_id>1165</qdb_r_id>
+            <qdb_ds_id>1157</qdb_ds_id>
+            <doi>10.1016/j.sab.2009.10.003</doi>
+        </reaction>
+        <reaction id="166">
+            <reactants>F+, Ar</reactants>
+            <products>F, Ar+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6134</qdb_r_id>
+            <qdb_ds_id>6062</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="167">
+            <reactants>Ar+, O</reactants>
+            <products>O+, Ar</products>
+            <arrh_a unit="cm3.s-1">6.4e-12</arrh_a>
+            <qdb_r_id>1162</qdb_r_id>
+            <qdb_ds_id>1154</qdb_ds_id>
+            <doi>10.1016/j.sab.2009.10.003</doi>
+        </reaction>
+        <reaction id="168">
+            <reactants>Ar+, O2</reactants>
+            <products>O2+, Ar</products>
+            <arrh_a unit="cm3.s-1">1.2e-11</arrh_a>
+            <qdb_r_id>1159</qdb_r_id>
+            <qdb_ds_id>1151</qdb_ds_id>
+            <doi>10.1116/1.579366</doi>
+        </reaction>
+        <reaction id="169">
+            <reactants>Ar+, N</reactants>
+            <products>N+, Ar</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>2447</qdb_r_id>
+            <qdb_ds_id>2492</qdb_ds_id>
+            <doi>10.1002/rcm.1290030312</doi>
+        </reaction>
+        <reaction id="170">
+            <reactants>Ar+, N2</reactants>
+            <products>Ar, N2+</products>
+            <arrh_a unit="cm3.s-1">5e-10</arrh_a>
+            <qdb_r_id>1173</qdb_r_id>
+            <qdb_ds_id>1165</qdb_ds_id>
+            <doi>10.1088/0963-0252/15/2/005</doi>
+        </reaction>
+        <reaction id="171">
+            <reactants>Ar+, F2</reactants>
+            <products>Ar, F2+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6143</qdb_r_id>
+            <qdb_ds_id>6071</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="172">
+            <reactants>Ar+, NO</reactants>
+            <products>Ar, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6148</qdb_r_id>
+            <qdb_ds_id>6076</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="173">
+            <reactants>Ar+, N2O</reactants>
+            <products>Ar, N2O+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6146</qdb_r_id>
+            <qdb_ds_id>6074</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="174">
+            <reactants>Ar+, NF3</reactants>
+            <products>Ar, NF3+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6145</qdb_r_id>
+            <qdb_ds_id>6073</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="175">
+            <reactants>Ar+, NF2</reactants>
+            <products>NF2+, Ar</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6050</qdb_r_id>
+            <qdb_ds_id>5946</qdb_ds_id>
+        </reaction>
+        <reaction id="176">
+            <reactants>Ar+, NF</reactants>
+            <products>NF+, Ar</products>
+            <arrh_a unit="cm3.s-1">5e-12</arrh_a>
+            <qdb_r_id>6051</qdb_r_id>
+            <qdb_ds_id>5947</qdb_ds_id>
+        </reaction>
+        <reaction id="177">
+            <reactants>N+, O</reactants>
+            <products>N, O+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6177</qdb_r_id>
+            <qdb_ds_id>6105</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="178">
+            <reactants>N2+, O</reactants>
+            <products>N2, O+</products>
+            <arrh_a unit="cm3.s-1">9.8e-12</arrh_a>
+            <qdb_r_id>6156</qdb_r_id>
+            <qdb_ds_id>6084</qdb_ds_id>
+            <doi>10.1063/1.555940</doi>
+        </reaction>
+        <reaction id="179">
+            <reactants>F+, O</reactants>
+            <products>F, O+</products>
+            <arrh_a unit="cm3.s-1">1e-10</arrh_a>
+            <qdb_r_id>1817</qdb_r_id>
+            <qdb_ds_id>1786</qdb_ds_id>
+            <doi>10.1088/0963-0252/21/5/055028</doi>
+        </reaction>
+        <reaction id="180">
+            <reactants>F2+, O</reactants>
+            <products>O+, F2</products>
+            <arrh_a unit="cm3.s-1">5e-10</arrh_a>
+            <qdb_r_id>3818</qdb_r_id>
+            <qdb_ds_id>3878</qdb_ds_id>
+        </reaction>
+        <reaction id="181">
+            <reactants>O+, O2</reactants>
+            <products>O2+, O</products>
+            <arrh_a unit="cm3.s-1">2e-11</arrh_a>
+            <arrh_b>-0.4</arrh_b>
+            <qdb_r_id>1123</qdb_r_id>
+            <qdb_ds_id>1115</qdb_ds_id>
+            <doi>10.1023/a:1007021207704</doi>
+        </reaction>
+        <reaction id="182">
+            <reactants>O+, N2O</reactants>
+            <products>O, N2O+</products>
+            <arrh_a unit="cm3.s-1">6.3e-10</arrh_a>
+            <qdb_r_id>6190</qdb_r_id>
+            <qdb_ds_id>6118</qdb_ds_id>
+        </reaction>
+        <reaction id="183">
+            <reactants>O+, NF3</reactants>
+            <products>O, NF3+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6189</qdb_r_id>
+            <qdb_ds_id>6117</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="184">
+            <reactants>O+, NF2</reactants>
+            <products>O, NF2+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6193</qdb_r_id>
+            <qdb_ds_id>6121</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="185">
+            <reactants>O+, NF</reactants>
+            <products>O, NF+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6191</qdb_r_id>
+            <qdb_ds_id>6119</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="186">
+            <reactants>N2+, O2</reactants>
+            <products>O2+, N2</products>
+            <arrh_a unit="cm3.s-1">5e-11</arrh_a>
+            <arrh_b>-0.8</arrh_b>
+            <qdb_r_id>1117</qdb_r_id>
+            <qdb_ds_id>1109</qdb_ds_id>
+            <doi>10.1023/a:1007021207704</doi>
+        </reaction>
+        <reaction id="187">
+            <reactants>F+, O2</reactants>
+            <products>F, O2+</products>
+            <arrh_a unit="cm3.s-1">7.14e-10</arrh_a>
+            <qdb_r_id>1818</qdb_r_id>
+            <qdb_ds_id>1787</qdb_ds_id>
+            <doi>10.1088/0963-0252/21/5/055028</doi>
+        </reaction>
+        <reaction id="188">
+            <reactants>F2+, O2</reactants>
+            <products>O2+, F2</products>
+            <arrh_a unit="cm3.s-1">5e-10</arrh_a>
+            <qdb_r_id>3817</qdb_r_id>
+            <qdb_ds_id>3877</qdb_ds_id>
+        </reaction>
+        <reaction id="189">
+            <reactants>N2O+, O2</reactants>
+            <products>N2O, O2+</products>
+            <arrh_a unit="cm3.s-1">2.24e-10</arrh_a>
+            <qdb_r_id>6207</qdb_r_id>
+            <qdb_ds_id>6135</qdb_ds_id>
+        </reaction>
+        <reaction id="190">
+            <reactants>NF3+, O2</reactants>
+            <products>NF3, O2+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6200</qdb_r_id>
+            <qdb_ds_id>6128</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="191">
+            <reactants>NF+, O2</reactants>
+            <products>NF, O2+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6216</qdb_r_id>
+            <qdb_ds_id>6144</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="192">
+            <reactants>O2+, NO</reactants>
+            <products>NO+, O2</products>
+            <arrh_a unit="cm3.s-1">4.6e-10</arrh_a>
+            <qdb_r_id>1129</qdb_r_id>
+            <qdb_ds_id>1121</qdb_ds_id>
+            <doi>10.1023/a:1007021207704</doi>
+        </reaction>
+        <reaction id="193">
+            <reactants>N2+, N</reactants>
+            <products>N+, N2</products>
+            <arrh_a unit="cm3.s-1">5e-12</arrh_a>
+            <qdb_r_id>1463</qdb_r_id>
+            <qdb_ds_id>1455</qdb_ds_id>
+        </reaction>
+        <reaction id="194">
+            <reactants>F+, N</reactants>
+            <products>N+, F</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6056</qdb_r_id>
+            <qdb_ds_id>5952</qdb_ds_id>
+            <doi>10.1063/1.1448894</doi>
+        </reaction>
+        <reaction id="195">
+            <reactants>F2+, N</reactants>
+            <products>N+, F2</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6061</qdb_r_id>
+            <qdb_ds_id>5957</qdb_ds_id>
+        </reaction>
+        <reaction id="196">
+            <reactants>N+, NO</reactants>
+            <products>N, NO+</products>
+            <arrh_a unit="cm3.s-1">4.72e-10</arrh_a>
+            <qdb_r_id>6182</qdb_r_id>
+            <qdb_ds_id>6110</qdb_ds_id>
+            <doi>10.1063/1.555940</doi>
+        </reaction>
+        <reaction id="197">
+            <reactants>N+, N2O</reactants>
+            <products>N, N2O+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6178</qdb_r_id>
+            <qdb_ds_id>6106</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="198">
+            <reactants>N+, NF3</reactants>
+            <products>NF3+, N</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6062</qdb_r_id>
+            <qdb_ds_id>5958</qdb_ds_id>
+            <doi>10.1063/1.436354</doi>
+        </reaction>
+        <reaction id="199">
+            <reactants>F+, N2</reactants>
+            <products>N2+, F</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6055</qdb_r_id>
+            <qdb_ds_id>5951</qdb_ds_id>
+            <doi>10.1016/0168-1176(86)87033-1</doi>
+        </reaction>
+        <reaction id="200">
+            <reactants>F2+, N2</reactants>
+            <products>N2+, F2</products>
+            <arrh_a unit="cm3.s-1">5e-12</arrh_a>
+            <qdb_r_id>6060</qdb_r_id>
+            <qdb_ds_id>5956</qdb_ds_id>
+        </reaction>
+        <reaction id="201">
+            <reactants>N2+, NO</reactants>
+            <products>NO+, N2</products>
+            <arrh_a unit="cm3.s-1">3.9e-10</arrh_a>
+            <qdb_r_id>1128</qdb_r_id>
+            <qdb_ds_id>1120</qdb_ds_id>
+            <doi>10.1023/a:1007021207704</doi>
+        </reaction>
+        <reaction id="202">
+            <reactants>N2+, N2O</reactants>
+            <products>N2, N2O+</products>
+            <arrh_a unit="cm3.s-1">6e-10</arrh_a>
+            <qdb_r_id>6158</qdb_r_id>
+            <qdb_ds_id>6086</qdb_ds_id>
+        </reaction>
+        <reaction id="203">
+            <reactants>N2+, NF3</reactants>
+            <products>N2, NF3+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6157</qdb_r_id>
+            <qdb_ds_id>6085</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="204">
+            <reactants>N2+, NF2</reactants>
+            <products>NF2+, N2</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6065</qdb_r_id>
+            <qdb_ds_id>5961</qdb_ds_id>
+            <doi>10.1063/1.436354</doi>
+        </reaction>
+        <reaction id="205">
+            <reactants>N2+, NF</reactants>
+            <products>N2, NF+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6159</qdb_r_id>
+            <qdb_ds_id>6087</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="206">
+            <reactants>F+, F2</reactants>
+            <products>F2+, F</products>
+            <arrh_a unit="cm3.s-1">7.94e-10</arrh_a>
+            <qdb_r_id>2140</qdb_r_id>
+            <qdb_ds_id>2121</qdb_ds_id>
+            <doi>10.1063/1.1448894</doi>
+        </reaction>
+        <reaction id="207">
+            <reactants>F+, NO</reactants>
+            <products>F, NO+</products>
+            <arrh_a unit="cm3.s-1">8.64e-10</arrh_a>
+            <qdb_r_id>6139</qdb_r_id>
+            <qdb_ds_id>6067</qdb_ds_id>
+            <doi>10.1063/1.555940</doi>
+        </reaction>
+        <reaction id="208">
+            <reactants>F+, N2O</reactants>
+            <products>F, N2O+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6137</qdb_r_id>
+            <qdb_ds_id>6065</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="209">
+            <reactants>F+, NF3</reactants>
+            <products>F, NF3+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6136</qdb_r_id>
+            <qdb_ds_id>6064</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="210">
+            <reactants>F+, NF2</reactants>
+            <products>NF2+, F</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6053</qdb_r_id>
+            <qdb_ds_id>5949</qdb_ds_id>
+            <doi>10.1063/1.1448894</doi>
+        </reaction>
+        <reaction id="211">
+            <reactants>F+, NF</reactants>
+            <products>NF+, F</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6054</qdb_r_id>
+            <qdb_ds_id>5950</qdb_ds_id>
+        </reaction>
+        <reaction id="212">
+            <reactants>F2+, NO</reactants>
+            <products>F2, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6153</qdb_r_id>
+            <qdb_ds_id>6081</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="213">
+            <reactants>F2+, N2O</reactants>
+            <products>F2, N2O+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6151</qdb_r_id>
+            <qdb_ds_id>6079</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="214">
+            <reactants>F2+, NF3</reactants>
+            <products>F2, NF3+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6150</qdb_r_id>
+            <qdb_ds_id>6078</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="215">
+            <reactants>F2+, NF2</reactants>
+            <products>NF2+, F2</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6058</qdb_r_id>
+            <qdb_ds_id>5954</qdb_ds_id>
+        </reaction>
+        <reaction id="216">
+            <reactants>F2+, NF</reactants>
+            <products>NF+, F2</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6059</qdb_r_id>
+            <qdb_ds_id>5955</qdb_ds_id>
+        </reaction>
+        <reaction id="217">
+            <reactants>N2O+, NO</reactants>
+            <products>N2O, NO+</products>
+            <arrh_a unit="cm3.s-1">2.3e-10</arrh_a>
+            <qdb_r_id>6209</qdb_r_id>
+            <qdb_ds_id>6137</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="218">
+            <reactants>NF3+, NO</reactants>
+            <products>NF3, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6203</qdb_r_id>
+            <qdb_ds_id>6131</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="219">
+            <reactants>NF2+, NO</reactants>
+            <products>NF2, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6228</qdb_r_id>
+            <qdb_ds_id>6156</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="220">
+            <reactants>NF+, NO</reactants>
+            <products>NF, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6218</qdb_r_id>
+            <qdb_ds_id>6146</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="221">
+            <reactants>NF3+, N2O</reactants>
+            <products>NF3, N2O+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6198</qdb_r_id>
+            <qdb_ds_id>6126</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="222">
+            <reactants>N2O+, NF2</reactants>
+            <products>N2O, NF2+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6208</qdb_r_id>
+            <qdb_ds_id>6136</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="223">
+            <reactants>N2O+, NF</reactants>
+            <products>N2O, NF+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6206</qdb_r_id>
+            <qdb_ds_id>6134</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="224">
+            <reactants>NF3+, NF2</reactants>
+            <products>NF3, NF2+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6202</qdb_r_id>
+            <qdb_ds_id>6130</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="225">
+            <reactants>NF+, NF2</reactants>
+            <products>NF2+, NF</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6068</qdb_r_id>
+            <qdb_ds_id>5964</qdb_ds_id>
+            <doi>10.1016/0009-2614(78)85391-3</doi>
+        </reaction>
+        <reaction id="226">
+            <reactants>NF3+, NF</reactants>
+            <products>NF3, NF+</products>
+            <arrh_a unit="cm3.s-1">1e-11</arrh_a>
+            <qdb_r_id>6199</qdb_r_id>
+            <qdb_ds_id>6127</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="227">
+            <reactants>Ar+, O*</reactants>
+            <products>O+, Ar</products>
+            <arrh_a unit="cm3.s-1">6.4e-12</arrh_a>
+            <qdb_r_id>2378</qdb_r_id>
+            <qdb_ds_id>2391</qdb_ds_id>
+            <doi>10.1063/1.366111</doi>
+        </reaction>
+        <reaction id="228">
+            <reactants>N2+, O</reactants>
+            <products>N, NO+</products>
+            <arrh_a unit="cm3.s-1">1.4e-10</arrh_a>
+            <qdb_r_id>6166</qdb_r_id>
+            <qdb_ds_id>6094</qdb_ds_id>
+        </reaction>
+        <reaction id="229">
+            <reactants>N+, O2</reactants>
+            <products>NO, O+</products>
+            <arrh_a unit="cm3.s-1">4.64e-11</arrh_a>
+            <qdb_r_id>6186</qdb_r_id>
+            <qdb_ds_id>6114</qdb_ds_id>
+            <doi>10.1063/1.555940</doi>
+        </reaction>
+        <reaction id="230">
+            <reactants>N2+, O2</reactants>
+            <products>NO, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-17</arrh_a>
+            <qdb_r_id>6164</qdb_r_id>
+            <qdb_ds_id>6092</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="231">
+            <reactants>F+, O2</reactants>
+            <products>O+, FO</products>
+            <arrh_a unit="cm3.s-1">5.04e-11</arrh_a>
+            <qdb_r_id>2120</qdb_r_id>
+            <qdb_ds_id>2101</qdb_ds_id>
+            <doi>10.1016/0168-1176(90)85106-c</doi>
+        </reaction>
+        <reaction id="232">
+            <reactants>N2O+, O2</reactants>
+            <products>NO2, NO+</products>
+            <arrh_a unit="cm3.s-1">4.59e-11</arrh_a>
+            <qdb_r_id>6213</qdb_r_id>
+            <qdb_ds_id>6141</qdb_ds_id>
+        </reaction>
+        <reaction id="233">
+            <reactants>O2+, N</reactants>
+            <products>O, NO+</products>
+            <arrh_a unit="cm3.s-1">1.5e-10</arrh_a>
+            <qdb_r_id>6224</qdb_r_id>
+            <qdb_ds_id>6152</qdb_ds_id>
+            <doi>10.1063/1.555940</doi>
+        </reaction>
+        <reaction id="234">
+            <reactants>O2+, N2</reactants>
+            <products>NO, NO+</products>
+            <arrh_a unit="cm3.s-1">1e-17</arrh_a>
+            <qdb_r_id>6225</qdb_r_id>
+            <qdb_ds_id>6153</qdb_ds_id>
+            <doi>10.1088/0022-3727/46/27/275201</doi>
+        </reaction>
+        <reaction id="235">
+            <reactants>N+, NO</reactants>
+            <products>O, N2+</products>
+            <arrh_a unit="cm3.s-1">8.33e-11</arrh_a>
+            <qdb_r_id>6185</qdb_r_id>
+            <qdb_ds_id>6113</qdb_ds_id>
+            <doi>10.1063/1.439913</doi>
+        </reaction>
+        <reaction id="236">
+            <reactants>N+, N2O</reactants>
+            <products>N2, NO+</products>
+            <arrh_a unit="cm3.s-1">5.5e-10</arrh_a>
+            <qdb_r_id>6184</qdb_r_id>
+            <qdb_ds_id>6112</qdb_ds_id>
+        </reaction>
+        <reaction id="237">
+            <reactants>N2+, N2O</reactants>
+            <products>N2, N, NO+</products>
+            <arrh_a unit="cm3.s-1">4e-10</arrh_a>
+            <qdb_r_id>6162</qdb_r_id>
+            <qdb_ds_id>6090</qdb_ds_id>
+        </reaction>
+        <reaction id="238">
+            <reactants>N2+, NO2</reactants>
+            <products>N2O, NO+</products>
+            <arrh_a unit="cm3.s-1">5e-11</arrh_a>
+            <qdb_r_id>6163</qdb_r_id>
+            <qdb_ds_id>6091</qdb_ds_id>
+        </reaction>
+        <reaction id="239">
+            <reactants>F+, NO</reactants>
+            <products>O, NF+</products>
+            <arrh_a unit="cm3.s-1">9.4e-11</arrh_a>
+            <qdb_r_id>6141</qdb_r_id>
+            <qdb_ds_id>6069</qdb_ds_id>
+            <doi>10.1063/1.555940</doi>
+        </reaction>
+        <reaction id="240">
+            <reactants>N2O+, N2O</reactants>
+            <products>N2, NO, NO+</products>
+            <arrh_a unit="cm3.s-1">1.2e-11</arrh_a>
+            <qdb_r_id>6211</qdb_r_id>
+            <qdb_ds_id>6139</qdb_ds_id>
+        </reaction>
+        <reaction id="241">
+            <reactants>N2O+, NO2</reactants>
+            <products>N2, O2, NO+</products>
+            <arrh_a unit="cm3.s-1">4.29e-10</arrh_a>
+            <qdb_r_id>6212</qdb_r_id>
+            <qdb_ds_id>6140</qdb_ds_id>
+        </reaction>
+        <reaction id="242">
+            <reactants>NF+, NF3</reactants>
+            <products>NF2, NF2+</products>
+            <arrh_a unit="cm3.s-1">5.5e-10</arrh_a>
+            <qdb_r_id>6220</qdb_r_id>
+            <qdb_ds_id>6148</qdb_ds_id>
+            <doi>10.1016/0009-2614(78)85391-3</doi>
+        </reaction>
+        <reaction id="243">
+            <reactants>O2-, O</reactants>
+            <products>O2, O-</products>
+            <arrh_a unit="cm3.s-1">3.3e-10</arrh_a>
+            <qdb_r_id>1207</qdb_r_id>
+            <qdb_ds_id>1199</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="244">
+            <reactants>O-, O2</reactants>
+            <products>O2-, O</products>
+            <arrh_a unit="cm3.s-1">2.5e-14</arrh_a>
+            <qdb_r_id>6239</qdb_r_id>
+            <qdb_ds_id>6167</qdb_ds_id>
+            <doi>10.1103/PhysRevA.3.487</doi>
+        </reaction>
+        <reaction id="245">
+            <reactants>O-, O3</reactants>
+            <products>O3-, O</products>
+            <arrh_a unit="cm3.s-1">5.3e-10</arrh_a>
+            <qdb_r_id>2847</qdb_r_id>
+            <qdb_ds_id>2900</qdb_ds_id>
+        </reaction>
+        <reaction id="246">
+            <reactants>O-, F</reactants>
+            <products>F-, O</products>
+            <arrh_a unit="cm3.s-1">5.5e-10</arrh_a>
+            <qdb_r_id>6238</qdb_r_id>
+            <qdb_ds_id>6166</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="247">
+            <reactants>O2-, O3</reactants>
+            <products>O2, O3-</products>
+            <arrh_a unit="cm3.s-1">4e-10</arrh_a>
+            <qdb_r_id>1208</qdb_r_id>
+            <qdb_ds_id>1200</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="248">
+            <reactants>O2-, F</reactants>
+            <products>F-, O2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1654</qdb_r_id>
+            <qdb_ds_id>1620</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="249">
+            <reactants>O3-, F</reactants>
+            <products>F-, O3</products>
+            <arrh_a unit="cm3.s-1">5.5e-10</arrh_a>
+            <qdb_r_id>6232</qdb_r_id>
+            <qdb_ds_id>6160</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="250">
+            <reactants>O3-, O</reactants>
+            <products>O2, O2, e</products>
+            <arrh_a unit="cm3.s-1">3e-10</arrh_a>
+            <qdb_r_id>1200</qdb_r_id>
+            <qdb_ds_id>1192</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="251">
+            <reactants>O-, O3</reactants>
+            <products>O2, O2, e</products>
+            <arrh_a unit="cm3.s-1">3.01e-10</arrh_a>
+            <arrh_b>0.5</arrh_b>
+            <qdb_r_id>3637</qdb_r_id>
+            <qdb_ds_id>3697</qdb_ds_id>
+            <doi>10.1002/rcm.1290030312</doi>
+        </reaction>
+        <reaction id="252">
+            <reactants>O-, O</reactants>
+            <products>O2, e</products>
+            <arrh_a unit="cm3.s-1">3e-10</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>2</qdb_r_id>
+            <qdb_ds_id>1238</qdb_ds_id>
+            <doi>10.1088/0963-0252/15/1/004</doi>
+        </reaction>
+        <reaction id="253">
+            <reactants>O2-, O</reactants>
+            <products>O3, e</products>
+            <arrh_a unit="cm3.s-1">1.5e-10</arrh_a>
+            <qdb_r_id>1197</qdb_r_id>
+            <qdb_ds_id>1189</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="254">
+            <reactants>O-, O2</reactants>
+            <products>O3, e</products>
+            <arrh_a unit="cm3.s-1">5e-15</arrh_a>
+            <qdb_r_id>1202</qdb_r_id>
+            <qdb_ds_id>1194</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="255">
+            <reactants>O-, N</reactants>
+            <products>NO, e</products>
+            <arrh_a unit="cm3.s-1">2.6e-10</arrh_a>
+            <qdb_r_id>1199</qdb_r_id>
+            <qdb_ds_id>1191</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="256">
+            <reactants>O-, N2</reactants>
+            <products>N2O, e</products>
+            <arrh_a unit="cm3.s-1">1e-12</arrh_a>
+            <qdb_r_id>6233</qdb_r_id>
+            <qdb_ds_id>6161</qdb_ds_id>
+        </reaction>
+        <reaction id="257">
+            <reactants>O-, NO</reactants>
+            <products>NO2, e</products>
+            <arrh_a unit="cm3.s-1">2.6e-10</arrh_a>
+            <qdb_r_id>1203</qdb_r_id>
+            <qdb_ds_id>1195</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="258">
+            <reactants>O2-, N</reactants>
+            <products>NO2, e</products>
+            <arrh_a unit="cm3.s-1">5e-10</arrh_a>
+            <qdb_r_id>1198</qdb_r_id>
+            <qdb_ds_id>1190</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="259">
+            <reactants>F-, F</reactants>
+            <products>e, F2</products>
+            <arrh_a unit="cm3.s-1">1.00e-10</arrh_a>
+            <qdb_r_id>1603</qdb_r_id>
+            <qdb_ds_id>1594</qdb_ds_id>
+            <doi>10.1063/1.351196</doi>
+        </reaction>
+        <reaction id="260">
+            <reactants>O3-, O</reactants>
+            <products>O2-, O2</products>
+            <arrh_a unit="cm3.s-1">3.2e-10</arrh_a>
+            <qdb_r_id>2851</qdb_r_id>
+            <qdb_ds_id>2904</qdb_ds_id>
+        </reaction>
+        <reaction id="261">
+            <reactants>O-, O3</reactants>
+            <products>O2-, O2</products>
+            <arrh_a unit="cm3.s-1">1.02e-11</arrh_a>
+            <arrh_b>0.5</arrh_b>
+            <qdb_r_id>3638</qdb_r_id>
+            <qdb_ds_id>3698</qdb_ds_id>
+            <doi>10.1002/rcm.1290030312</doi>
+        </reaction>
+        <reaction id="262">
+            <reactants>O2-, N2O</reactants>
+            <products>O3-, N2</products>
+            <arrh_a unit="cm3.s-1">1e-12</arrh_a>
+            <qdb_r_id>1211</qdb_r_id>
+            <qdb_ds_id>1203</qdb_ds_id>
+            <doi>10.1088/0963-0252/1/3/011</doi>
+        </reaction>
+        <reaction id="263">
+            <reactants>Ar+, O-</reactants>
+            <products>Ar, O</products>
+            <arrh_a unit="cm3.s-1">2.7e-07</arrh_a>
+            <qdb_r_id>1163</qdb_r_id>
+            <qdb_ds_id>1155</qdb_ds_id>
+            <doi>10.1016/j.sab.2009.10.003</doi>
+        </reaction>
+        <reaction id="264">
+            <reactants>O2-, Ar+</reactants>
+            <products>O2, Ar</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1348</qdb_r_id>
+            <qdb_ds_id>1340</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="265">
+            <reactants>O3-, Ar+</reactants>
+            <products>O3, Ar</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1388</qdb_r_id>
+            <qdb_ds_id>1380</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="266">
+            <reactants>F-, Ar+</reactants>
+            <products>F, Ar</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>6069</qdb_r_id>
+            <qdb_ds_id>5965</qdb_ds_id>
+            <doi>10.1063/1.1674506</doi>
+        </reaction>
+        <reaction id="267">
+            <reactants>O2-, O+</reactants>
+            <products>O2, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1365</qdb_r_id>
+            <qdb_ds_id>1357</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="268">
+            <reactants>O3-, O+</reactants>
+            <products>O3, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1405</qdb_r_id>
+            <qdb_ds_id>1397</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="269">
+            <reactants>O+, F-</reactants>
+            <products>O, F</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1720</qdb_r_id>
+            <qdb_ds_id>1689</qdb_ds_id>
+        </reaction>
+        <reaction id="270">
+            <reactants>O-, O2+</reactants>
+            <products>O2, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1243</qdb_r_id>
+            <qdb_ds_id>1378</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="271">
+            <reactants>O-, F+</reactants>
+            <products>O, F</products>
+            <arrh_a unit="cm3.s-1">3e-07</arrh_a>
+            <qdb_r_id>2187</qdb_r_id>
+            <qdb_ds_id>2168</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="272">
+            <reactants>O-, F2+</reactants>
+            <products>O, F2</products>
+            <arrh_a unit="cm3.s-1">1.5e-07</arrh_a>
+            <qdb_r_id>2204</qdb_r_id>
+            <qdb_ds_id>2185</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="273">
+            <reactants>O-, NO+</reactants>
+            <products>O, NO</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1264</qdb_r_id>
+            <qdb_ds_id>1376</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="274">
+            <reactants>O-, N2O+</reactants>
+            <products>O, N2O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1259</qdb_r_id>
+            <qdb_ds_id>1371</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="275">
+            <reactants>O2-, O2+</reactants>
+            <products>O2, O2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1366</qdb_r_id>
+            <qdb_ds_id>1358</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="276">
+            <reactants>O3-, O2+</reactants>
+            <products>O3, O2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1406</qdb_r_id>
+            <qdb_ds_id>1398</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="277">
+            <reactants>O2+, F-</reactants>
+            <products>O2, F</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1717</qdb_r_id>
+            <qdb_ds_id>1686</qdb_ds_id>
+        </reaction>
+        <reaction id="278">
+            <reactants>O2-, N+</reactants>
+            <products>O2, N</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1356</qdb_r_id>
+            <qdb_ds_id>1348</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="279">
+            <reactants>O2-, N2+</reactants>
+            <products>O2, N2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1357</qdb_r_id>
+            <qdb_ds_id>1349</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="280">
+            <reactants>O2-, F+</reactants>
+            <products>O2, F</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>2207</qdb_r_id>
+            <qdb_ds_id>2188</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="281">
+            <reactants>O2-, F2+</reactants>
+            <products>O2, F2</products>
+            <arrh_a unit="cm3.s-1">1.5e-07</arrh_a>
+            <qdb_r_id>2208</qdb_r_id>
+            <qdb_ds_id>2189</qdb_ds_id>
+            <doi>10.1116/1.1697483</doi>
+        </reaction>
+        <reaction id="282">
+            <reactants>O2-, NO+</reactants>
+            <products>O2, NO</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1364</qdb_r_id>
+            <qdb_ds_id>1356</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="283">
+            <reactants>O2-, N2O+</reactants>
+            <products>O2, N2O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1359</qdb_r_id>
+            <qdb_ds_id>1351</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="284">
+            <reactants>O3-, N+</reactants>
+            <products>O3, N</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1396</qdb_r_id>
+            <qdb_ds_id>1388</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="285">
+            <reactants>O3-, N2+</reactants>
+            <products>O3, N2</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1397</qdb_r_id>
+            <qdb_ds_id>1389</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="286">
+            <reactants>O3-, NO+</reactants>
+            <products>O3, NO</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1404</qdb_r_id>
+            <qdb_ds_id>1396</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="287">
+            <reactants>O3-, N2O+</reactants>
+            <products>O3, N2O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>1399</qdb_r_id>
+            <qdb_ds_id>1391</qdb_ds_id>
+            <doi>10.1063/1.437364</doi>
+        </reaction>
+        <reaction id="288">
+            <reactants>F-, N+</reactants>
+            <products>F, N</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>1868</qdb_r_id>
+            <qdb_ds_id>1837</qdb_ds_id>
+        </reaction>
+        <reaction id="289">
+            <reactants>F-, N2+</reactants>
+            <products>F, N2</products>
+            <arrh_a unit="cm3.s-1">3e-07</arrh_a>
+            <qdb_r_id>1869</qdb_r_id>
+            <qdb_ds_id>1838</qdb_ds_id>
+        </reaction>
+        <reaction id="290">
+            <reactants>F-, F+</reactants>
+            <products>F, F</products>
+            <arrh_a unit="cm3.s-1">1.00e-07</arrh_a>
+            <qdb_r_id>1612</qdb_r_id>
+            <qdb_ds_id>1603</qdb_ds_id>
+            <doi>10.1063/1.351196</doi>
+        </reaction>
+        <reaction id="291">
+            <reactants>F-, N2O+</reactants>
+            <products>F, N2O</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <arrh_b>-0.5</arrh_b>
+            <qdb_r_id>6255</qdb_r_id>
+            <qdb_ds_id>6183</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="292">
+            <reactants>O-, N2O+</reactants>
+            <products>O, N2, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>6267</qdb_r_id>
+            <qdb_ds_id>6195</qdb_ds_id>
+        </reaction>
+        <reaction id="293">
+            <reactants>O-, NF3+</reactants>
+            <products>O, NF2, F</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6260</qdb_r_id>
+            <qdb_ds_id>6188</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="294">
+            <reactants>O-, NF2+</reactants>
+            <products>O, NF, F</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6261</qdb_r_id>
+            <qdb_ds_id>6189</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="295">
+            <reactants>O2-, NO+</reactants>
+            <products>O2, N, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>6287</qdb_r_id>
+            <qdb_ds_id>6216</qdb_ds_id>
+        </reaction>
+        <reaction id="296">
+            <reactants>O2-, N2O+</reactants>
+            <products>O2, N2, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>6288</qdb_r_id>
+            <qdb_ds_id>6217</qdb_ds_id>
+        </reaction>
+        <reaction id="297">
+            <reactants>O2-, NF3+</reactants>
+            <products>O2, NF2, F</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6280</qdb_r_id>
+            <qdb_ds_id>6209</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="298">
+            <reactants>O2-, NF2+</reactants>
+            <products>O2, NF, F</products>
+            <arrh_a unit="cm3.s-1">2e-07</arrh_a>
+            <qdb_r_id>6281</qdb_r_id>
+            <qdb_ds_id>6210</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="299">
+            <reactants>F-, N2O+</reactants>
+            <products>F, N2, O</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>6256</qdb_r_id>
+            <qdb_ds_id>6184</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="300">
+            <reactants>F-, NF+</reactants>
+            <products>F, N, F</products>
+            <arrh_a unit="cm3.s-1">1e-07</arrh_a>
+            <qdb_r_id>6248</qdb_r_id>
+            <qdb_ds_id>6176</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="301">
+            <reactants>O, O, M</reactants>
+            <products>O2*, M</products>
+            <arrh_a unit="cm6.s-1">1.9e-35</arrh_a>
+            <arrh_b>-0.63</arrh_b>
+            <qdb_r_id>2070</qdb_r_id>
+            <qdb_ds_id>2051</qdb_ds_id>
+            <doi>10.1109/27.467998</doi>
+        </reaction>
+        <reaction id="302">
+            <reactants>O, O+, M</reactants>
+            <products>O2+, M</products>
+            <arrh_a unit="cm6.s-1">1e-29</arrh_a>
+            <qdb_r_id>2184</qdb_r_id>
+            <qdb_ds_id>2165</qdb_ds_id>
+            <doi>10.1109/27.467998</doi>
+        </reaction>
+        <reaction id="303">
+            <reactants>F, O, M</reactants>
+            <products>FO, M</products>
+            <arrh_a unit="cm6.s-1">1e-33</arrh_a>
+            <qdb_r_id>6385</qdb_r_id>
+            <qdb_ds_id>6314</qdb_ds_id>
+            <doi>10.1016/0360-1285(95)00009-7</doi>
+        </reaction>
+        <reaction id="304">
+            <reactants>N, N, M</reactants>
+            <products>N2*, M</products>
+            <arrh_a unit="cm6.s-1">1e-32</arrh_a>
+            <qdb_r_id>2824</qdb_r_id>
+            <qdb_ds_id>2874</qdb_ds_id>
+            <doi>10.1088/0022-3727/36/6/309</doi>
+        </reaction>
+        <reaction id="305">
+            <reactants>N, F, M</reactants>
+            <products>NF, M</products>
+            <arrh_a unit="cm6.s-1">2.8e-34</arrh_a>
+            <qdb_r_id>6390</qdb_r_id>
+            <qdb_ds_id>6322</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="306">
+            <reactants>F, F, M</reactants>
+            <products>F2, M</products>
+            <arrh_a unit="cm6.s-1">6.77e-34</arrh_a>
+            <qdb_r_id>1856</qdb_r_id>
+            <qdb_ds_id>1825</qdb_ds_id>
+        </reaction>
+        <reaction id="307">
+            <reactants>F, NO, M</reactants>
+            <products>FNO, M</products>
+            <arrh_a unit="cm6.s-1">5.9e-32</arrh_a>
+            <arrh_b>-1.7</arrh_b>
+            <qdb_r_id>6386</qdb_r_id>
+            <qdb_ds_id>6315</qdb_ds_id>
+        </reaction>
+        <reaction id="308">
+            <reactants>NF2, F, M</reactants>
+            <products>NF3, M</products>
+            <arrh_a unit="cm6.s-1">5e-31</arrh_a>
+            <qdb_r_id>6073</qdb_r_id>
+            <qdb_ds_id>5969</qdb_ds_id>
+            <doi>10.1063/1.449244</doi>
+        </reaction>
+        <reaction id="309">
+            <reactants>NF, F, M</reactants>
+            <products>NF2, M</products>
+            <arrh_a unit="cm6.s-1">1.03e-30</arrh_a>
+            <qdb_r_id>6389</qdb_r_id>
+            <qdb_ds_id>6321</qdb_ds_id>
+            <doi>10.1116/1.4978551</doi>
+        </reaction>
+        <reaction id="310">
+            <reactants>Ar**</reactants>
+            <products>Ar*</products>
+            <arrh_a unit="s-1">100000.0</arrh_a>
+            <qdb_r_id>2088</qdb_r_id>
+            <qdb_ds_id>2069</qdb_ds_id>
+        </reaction>
+    </reactions>
+</chemistry>
