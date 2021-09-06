@@ -30,7 +30,7 @@ The following is a tested way to use the code on Linux operating systems:
   from the repository root (with `setup.py` file).
   This installs the package in editable mode. 
   Any changes made to the code will immediately apply across the system.
-  It also means the repository folder cannot be deletedor moved without breaking the install.
+  It also means the repository folder cannot be deleted or moved without breaking the install.
 * Verify the installation of the packages succeeded by running the unit tests and run tests (by executing the prepared shell scripts):
   ```
   sh unit_tests/test.sh
@@ -42,15 +42,15 @@ This README file and the description is not a package documentation.
 I have tried my best to document directly in the code.
 The python packages published in this repository served me personaly to acomplish my PhD goals, but were never intended to be released as stand-alone packages into the open-source community, with full documentation and support.
 The following is a brief overview of the packages and their place in the global modeling and chemistry reduction framework.
-* `plaschem` (__plas__ma __chem__istry):
+* `plaschem` (**plas**ma **chem**istry):
   A package implementing data-structures for representation of species, reactions, and chemistry sets.
   Contains some handy functionality, such as the ability to self-consistently remove reactions or species from the chemistry, pretty-printing the chemistry sets, storing the sets into xml files, export chemistry sets as LaTeX tables, etc.
   Instances of the `plaschem.chemistry.Chemistry` class are used as one of the inputs for classes of the `pygmo_fwork` package.
-* `pygmo_fwork` (__py__thon __g__lobal __mo__deling __f__rame__work__) package consists of two sub-packages:
-  * `pygmol` (__py__thon __g__lobal __mo__de__l__) - a global model python package. The model uses `scipy.solve_ivp` solver to solve the set of ODEs defined in the `equations` module.
+* `pygmo_fwork` (**py**thon **g**lobal **mo**deling **f**rame**work**) package consists of two sub-packages:
+  * `pygmol` (**py**thon **g**lobal **mo**de**l**) - a global model python package. The model uses `scipy.solve_ivp` solver to solve the set of ODEs defined in the `equations` module.
     The main module to control the global model is `model` and its class `Model`.
     `model.Model` class handles only the solver outputing raw data, no logging or post-processing functionality is present in the package.
-  * `optichem` (__opti__mization of __chem__istries) - a package implementing the chemistry graph-based species ranking, the iterative skeletal reduction method, and Morris method of sensitivity analysis.
+  * `optichem` (**opti**mization of **chem**istries) - a package implementing the chemistry graph-based species ranking, the iterative skeletal reduction method, and Morris method of sensitivity analysis.
   Apart from the two sub-packages, `pygmo_fwork` package also implements a higher-level wrapper around the `pygmol` sub-package, which handles results logging and results post-processing.
   This is located in the `pygmo_fwork.global_model` module.
   The `pygmo_fwork.global_model.GlobalModel` class was written with interchangable model backends in mind, but as it stands, the `pygmol` model is the only backend available.
