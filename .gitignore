@@ -3,8 +3,7 @@
 
 # Python
 **/__pycache__
-pygmol.egg-info
-pyproject.toml
+*.egg-info
 
 # LaTeX
 *.aux
